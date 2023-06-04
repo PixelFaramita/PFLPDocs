@@ -19,7 +19,7 @@ jobs:
           cache: npm
       # write 'export const prefix = "/";' to 'src/.vuepress/path.ts'
       - name: Write Path
-        run: echo 'export const prefix = "/";' > src/.vuepress/path.ts
+        run: echo 'export const prefix = "/PFLPDocs/";' > src/.vuepress/path.ts
       - name: Install Dependencies
         run: npm ci
       - name: Build Docs

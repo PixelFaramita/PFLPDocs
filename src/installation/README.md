@@ -70,5 +70,3 @@ icon: lightbulb
     - ...
         lazy.jpeg
 
-
-[def]: InstallGuideForPanel.md

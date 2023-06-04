@@ -34,3 +34,4 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
           clean: true
+          single-commit: true

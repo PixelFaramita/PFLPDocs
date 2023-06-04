@@ -28,7 +28,7 @@ export default hopeTheme({
     "/": {
       navbar: zhNavbar,
       footer:
-        '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> ',
+        '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> 我墙裂推荐你也用一手真的非常好用不论写博客还是写文档都非常方便',
       sidebar: "structure",
       displayFooter: true,
       metaLocales: {

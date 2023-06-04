@@ -18,7 +18,8 @@ export default hopeTheme({
     "/en/": {
       navbar: enNavbar,
       sidebar: "structure",
-      footer: "Default footer",
+      footer:
+        'Powered by <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> ',
       displayFooter: true,
       metaLocales: {
         editLink: "Edit this page on GitHub",

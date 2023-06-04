@@ -8,7 +8,7 @@ sidebar: heading
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: LuminousPolymerization
+heroText: Luminous Polymerization
 tagline: 此全新基础性插件依托于相当💥的LiteLoader.NET
 actions:
   - text: 装载

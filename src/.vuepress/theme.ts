@@ -3,7 +3,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-  sidebar: "heading",
+  sidebar: "structure",
   author: {
     name: "LazuliKao",
     url: "https://www.mcpf.live",

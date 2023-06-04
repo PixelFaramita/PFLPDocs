@@ -1,6 +1,6 @@
 ---
-title: 配置
+title: 文件结构
 index: true
 icon: laptop-code
 ---
-## 基本配置
+## 文件结构

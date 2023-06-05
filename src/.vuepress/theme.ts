@@ -18,7 +18,7 @@ export default hopeTheme({
   // repoDisplay: true,
   // repoLabel: "GitHub",
   themeColor: true,
-  sidebarSorter: ["order"],
+  sidebarSorter: ["readme", "order", "filename"],
   fullscreen: true,
   editLink: true,
   titleIcon: undefined,
@@ -26,6 +26,7 @@ export default hopeTheme({
     "/i18n/en/": {
       sidebar: "structure",
       navbar: enNavbar,
+      copyright: "Copyright © 2023 Pixel Faramita",
       footer:
         'Powered by <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> ',
       displayFooter: true,
@@ -34,8 +35,9 @@ export default hopeTheme({
       },
     },
     "/": {
-      sidebar: "structure",
+      sidebar: zhSidebar,
       navbar: zhNavbar,
+      copyright: "Copyright © 2023 Pixel Faramita",
       footer:
         '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> 我墙裂推荐你也用一手真的非常好用不论写博客还是写文档都非常方便',
       displayFooter: true,

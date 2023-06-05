@@ -1,5 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./nav/index";
+import { enNavbar, zhNavbar, zhSidebar } from "./nav/index";
 export default hopeTheme({
   hostname: "https://docs.mcpf.live",
   sidebar: "structure",
@@ -18,7 +18,7 @@ export default hopeTheme({
   // repoDisplay: true,
   // repoLabel: "GitHub",
   themeColor: true,
-  sidebarSorter: ["order", "readme", "filename"],
+  sidebarSorter: ["order"],
   fullscreen: true,
   editLink: true,
   titleIcon: undefined,

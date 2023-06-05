@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://docs.mcpf.live",
   sidebar: "structure",
   author: {
     name: "LazuliKao",
@@ -14,6 +14,12 @@ export default hopeTheme({
   docsRepo: "LazuliKao/PFLPDocs",
   docsBranch: "💥",
   docsDir: "src",
+  lastUpdated: true,
+  // pure: true,
+  // repoDisplay: true,
+  // repoLabel: "GitHub",
+  themeColor: true,
+  fullscreen: true,
   editLink: true,
   titleIcon: undefined,
   locales: {
@@ -46,6 +52,12 @@ export default hopeTheme({
   //   },
   // },
   plugins: {
+    copyCode: {
+      showInMobile: true,
+    },
+    prismjs: {
+      dark: "gruvbox-dark",
+    },
     comment: {
       provider: "Giscus",
       repo: "LazuliKao/PFLPDocs",

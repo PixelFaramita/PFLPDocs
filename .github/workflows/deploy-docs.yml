@@ -17,11 +17,15 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      # write 'export const prefix = "/";' to 'src/.vuepress/path.ts'
-      - name: Write Path
-        run: echo 'export const prefix = "/PFLPDocs/";' > src/.vuepress/path.ts
       - name: Install Dependencies
         run: npm ci
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Write Path
+        run: echo 'export const prefix = "/PFLPDocs/";' > src/.vuepress/path.ts
+      - name: PreProcess
+        run: dotnet fsi ./src/.vuepress/preprocess.fsx
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192

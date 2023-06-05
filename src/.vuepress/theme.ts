@@ -63,6 +63,7 @@ export default hopeTheme({
       repoId: "R_kgDOJrGxPQ",
       category: "docs",
       categoryId: "DIC_kwDOJrGxPc4CW8zd",
+      mapping: "pathname",
     },
     git: {
       contributors: true,

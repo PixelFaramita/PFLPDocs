@@ -1,6 +1,6 @@
 import { prefix } from "./path";
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import theme from "./theme";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 export default defineUserConfig({
   base: prefix,

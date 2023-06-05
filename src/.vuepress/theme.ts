@@ -19,13 +19,14 @@ export default hopeTheme({
   // repoDisplay: true,
   // repoLabel: "GitHub",
   themeColor: true,
+  sidebarSorter: ["readme", "order", "filename"],
   fullscreen: true,
   editLink: true,
   titleIcon: undefined,
   locales: {
     "/en/": {
-      navbar: enNavbar,
       sidebar: "structure",
+      navbar: enNavbar,
       footer:
         'Powered by <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> ',
       displayFooter: true,
@@ -35,10 +36,9 @@ export default hopeTheme({
     },
     "/": {
       navbar: zhNavbar,
-
+      sidebar: "structure",
       footer:
         '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> 我墙裂推荐你也用一手真的非常好用不论写博客还是写文档都非常方便',
-      sidebar: "structure",
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",

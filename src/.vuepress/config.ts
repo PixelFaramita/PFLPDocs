@@ -23,6 +23,7 @@ export default defineUserConfig({
       indexContent: true,
       // 为分类和标签添加索引
       autoSuggestions: true,
+
       customFields: [
         {
           getter: (page) => page.frontmatter.category as string[],

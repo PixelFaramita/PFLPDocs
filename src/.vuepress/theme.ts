@@ -1,6 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-
+import { enNavbar, zhNavbar } from "./nav/index";
 export default hopeTheme({
   hostname: "https://docs.mcpf.live",
   sidebar: "structure",
@@ -19,12 +18,12 @@ export default hopeTheme({
   // repoDisplay: true,
   // repoLabel: "GitHub",
   themeColor: true,
-  sidebarSorter: ["readme", "order", "filename"],
+  sidebarSorter: ["order", "readme", "filename"],
   fullscreen: true,
   editLink: true,
   titleIcon: undefined,
   locales: {
-    "/en/": {
+    "/i18n/en/": {
       sidebar: "structure",
       navbar: enNavbar,
       footer:
@@ -35,8 +34,8 @@ export default hopeTheme({
       },
     },
     "/": {
-      navbar: zhNavbar,
       sidebar: "structure",
+      navbar: zhNavbar,
       footer:
         '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> 我墙裂推荐你也用一手真的非常好用不论写博客还是写文档都非常方便',
       displayFooter: true,

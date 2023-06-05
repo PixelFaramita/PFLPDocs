@@ -4,13 +4,14 @@ import theme from "./theme";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 export default defineUserConfig({
   base: prefix,
+  source: "docs",
   locales: {
     "/": {
       lang: "zh-CN",
       title: "Luminous Polymerization 文档",
       description: "一个基于LiteLoader.NET的全新的基础性插件",
     },
-    "/en/": {
+    "/i18n/en/": {
       lang: "en-US",
       title: "Luminous Polymerization Docs",
       description: "brand new Essential Plugin Base on LiteLoader.NET",

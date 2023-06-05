@@ -2,6 +2,7 @@
 title: 装载
 icon: lightbulb
 index: true
+order: 1
 ---
 
 ### 安装插件

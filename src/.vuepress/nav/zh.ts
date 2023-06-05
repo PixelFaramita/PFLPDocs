@@ -8,15 +8,21 @@ const items = {
   "/faq/": "常见问题",
   "/changelog/": "更新日志",
   "/about/": "关于",
-} as Record<string, string>;
+};
 export const zhNavbar = navbar(Object.keys(items));
 const data = [] as SidebarArrayOptions;
 for (const key in items) {
-  const value = items[key];
-  data.push({
-    link: key,
-    text: value,
-    children: "structure",
-  });
+  const value = items[key] as string;
+  if (value in ["/installation/", "/guide/", "/usage/"])
+    data.push({
+      link: key,
+      text: value,
+      children: "structure",
+    });
+  else
+    data.push({
+      link: key,
+      text: value,
+    });
 }
 export const zhSidebar = sidebar(data);

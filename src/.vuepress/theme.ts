@@ -45,6 +45,7 @@ export default hopeTheme({
       },
     },
   },
+
   // encrypt: {
   //   config: {
   //     "/demo/encrypt.html": ["1234"],
@@ -55,9 +56,7 @@ export default hopeTheme({
     copyCode: {
       showInMobile: true,
     },
-    prismjs: {
-      dark: "gruvbox-dark",
-    },
+    pwa: true,
     comment: {
       provider: "Giscus",
       repo: "LazuliKao/PFLPDocs",

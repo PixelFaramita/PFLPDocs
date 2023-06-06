@@ -1,5 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar, zhSidebar } from "./nav/index";
+import { enNavbar, zhNavbar } from "./nav/index";
 export default hopeTheme({
   hostname: "https://docs.mcpf.live",
   sidebar: "structure",
@@ -18,7 +18,35 @@ export default hopeTheme({
   // repoDisplay: true,
   // repoLabel: "GitHub",
   themeColor: true,
-  sidebarSorter: ["readme", "order", "filename"],
+  headerDepth: 1,
+  sidebarSorter: (v1, v2) => {
+    if (v1.frontmatter?.home) {
+      return -1;
+    }
+    if (v1.type == "dir" && v2.type == "file") {
+      return -1;
+    }
+    if (v1.type == "file" && v2.type == "dir") {
+      return 1;
+    }
+    if (v1.type == "dir" && v2.type == "dir") {
+      return (v1.frontmatter?.order ?? 0) > (v2.frontmatter?.order ?? 0)
+        ? 1
+        : -1;
+    }
+    if (v2.type == "file" && v1.type == "file") {
+      if (v1.filename.toLowerCase() == "readme.md") {
+        return -1;
+      }
+      if (v2.filename.toLowerCase() == "readme.md") {
+        return 1;
+      }
+      return (v1.frontmatter?.order ?? 0) > (v2.frontmatter?.order ?? 0)
+        ? 1
+        : -1;
+    }
+    return 1;
+  },
   fullscreen: true,
   editLink: true,
   titleIcon: undefined,
@@ -35,7 +63,7 @@ export default hopeTheme({
       },
     },
     "/": {
-      sidebar: zhSidebar,
+      sidebar: "structure",
       navbar: zhNavbar,
       copyright: "Copyright © 2023 Pixel Faramita",
       footer:
@@ -46,7 +74,6 @@ export default hopeTheme({
       },
     },
   },
-
   // encrypt: {
   //   config: {
   //     "/demo/encrypt.html": ["1234"],

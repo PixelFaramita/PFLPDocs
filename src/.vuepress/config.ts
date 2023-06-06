@@ -1,16 +1,17 @@
 import { prefix } from "./path";
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import theme from "./theme";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 export default defineUserConfig({
   base: prefix,
+  source: "docs",
   locales: {
     "/": {
       lang: "zh-CN",
       title: "Luminous Polymerization 文档",
       description: "一个基于LiteLoader.NET的全新的基础性插件",
     },
-    "/en/": {
+    "/i18n/en/": {
       lang: "en-US",
       title: "Luminous Polymerization Docs",
       description: "brand new Essential Plugin Base on LiteLoader.NET",
@@ -23,6 +24,7 @@ export default defineUserConfig({
       indexContent: true,
       // 为分类和标签添加索引
       autoSuggestions: true,
+
       customFields: [
         {
           getter: (page) => page.frontmatter.category as string[],

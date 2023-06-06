@@ -258,9 +258,8 @@ highlights:
   #       icon: mobile-screen
   #       details: Make your site more like an APP
   #       link: https://theme-hope.vuejs.press/guide/advanced/pwa.html
-copyright: Copyright © 2023 Pixel Faramita 
 ---
 
 - ### [MineBBS 帖子](https://www.minebbs.com/resources/5400/)
 - ### [配置工具](https://www.mcpf.live/)
-- ### [最新构建](https://gxh.lanzoum.com/b03v3gxbi)  密码:114514
+- ### [最新构建](https://gxh.lanzoum.com/b03v3gxbi) 密码:114514

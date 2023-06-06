@@ -1,8 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-
+import { enNavbar, zhNavbar } from "./nav/index";
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://docs.mcpf.live",
   sidebar: "structure",
   author: {
     name: "LazuliKao",
@@ -11,13 +10,54 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands",
   logo: "/logo.svg",
   repo: "LazuliKao/PFLPDocs",
+  docsRepo: "LazuliKao/PFLPDocs",
+  docsBranch: "💥",
   docsDir: "src",
+  lastUpdated: true,
+  // pure: true,
+  // repoDisplay: true,
+  // repoLabel: "GitHub",
+  themeColor: true,
+  headerDepth: 1,
+  sidebarSorter: (v1, v2) => {
+    if (v1.frontmatter?.home) {
+      return -1;
+    }
+    if (v2.frontmatter?.home) {
+      return 1;
+    }
+    if (v1.type == "dir" && v2.type == "file") {
+      return -1;
+    }
+    if (v1.type == "file" && v2.type == "dir") {
+      return 1;
+    }
+    if (v1.type == "dir" && v2.type == "dir") {
+      return (v1.frontmatter?.order ?? 0) > (v2.frontmatter?.order ?? 0)
+        ? 1
+        : -1;
+    }
+    if (v2.type == "file" && v1.type == "file") {
+      if (v1.filename.toLowerCase() == "readme.md") {
+        return -1;
+      }
+      if (v2.filename.toLowerCase() == "readme.md") {
+        return 1;
+      }
+      return (v1.frontmatter?.order ?? 0) > (v2.frontmatter?.order ?? 0)
+        ? 1
+        : -1;
+    }
+    return 1;
+  },
+  fullscreen: true,
   editLink: true,
   titleIcon: undefined,
   locales: {
-    "/en/": {
-      navbar: enNavbar,
+    "/i18n/en/": {
       sidebar: "structure",
+      navbar: enNavbar,
+      copyright: "Copyright © 2023 Pixel Faramita",
       footer:
         'Powered by <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> ',
       displayFooter: true,
@@ -26,10 +66,11 @@ export default hopeTheme({
       },
     },
     "/": {
+      sidebar: "structure",
       navbar: zhNavbar,
+      copyright: "Copyright © 2023 Pixel Faramita",
       footer:
         '主题使用了 <a href="https://theme-hope.vuejs.press/" target="_blank"> VuePress Theme Hope </a> 我墙裂推荐你也用一手真的非常好用不论写博客还是写文档都非常方便',
-      sidebar: "structure",
       displayFooter: true,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
@@ -43,12 +84,17 @@ export default hopeTheme({
   //   },
   // },
   plugins: {
+    copyCode: {
+      showInMobile: true,
+    },
+    pwa: true,
     comment: {
       provider: "Giscus",
       repo: "LazuliKao/PFLPDocs",
       repoId: "R_kgDOJrGxPQ",
       category: "docs",
       categoryId: "DIC_kwDOJrGxPc4CW8zd",
+      mapping: "pathname",
     },
     git: {
       contributors: true,

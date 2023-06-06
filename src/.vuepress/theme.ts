@@ -23,6 +23,9 @@ export default hopeTheme({
     if (v1.frontmatter?.home) {
       return -1;
     }
+    if (v2.frontmatter?.home) {
+      return 1;
+    }
     if (v1.type == "dir" && v2.type == "file") {
       return -1;
     }

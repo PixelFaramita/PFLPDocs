@@ -101,6 +101,11 @@ export default hopeTheme({
       updatedTime: true,
       createdTime: true,
     },
+    prismjs: {
+      dark: "vsc-dark-plus",
+      light: "vs",
+    },
+    photoSwipe: true,
     mdEnhance: {
       align: true,
       attrs: true,

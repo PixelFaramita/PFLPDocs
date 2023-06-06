@@ -1,7 +1,7 @@
 ---
 title: 文件结构
 index: true
-order: 2
+order: 1
 icon: laptop-code
 ---
 

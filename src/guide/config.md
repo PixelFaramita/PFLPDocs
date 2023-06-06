@@ -1,7 +1,7 @@
 ---
 title: 插件配置
 icon: laptop-code
-order: 1
+order: 2
 ---
 
 ## 基本配置

@@ -1,5 +1,5 @@
 ---
-title: 安装LiteLoaderBDS
+title: 2.安装LiteLoaderBDS
 order: 2
 ---
 

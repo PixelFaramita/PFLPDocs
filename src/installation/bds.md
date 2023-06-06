@@ -1,5 +1,5 @@
 ---
-title: 安装Bedrock Dedicated Server
+title: 1.安装Bedrock Dedicated Server
 order: 1
 ---
 

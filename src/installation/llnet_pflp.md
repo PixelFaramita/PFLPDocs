@@ -1,5 +1,5 @@
 ---
-title: 安装LiteLoader.NET和PFLP
+title: 3.安装LiteLoader.NET和PFLP
 order: 3
 ---
 

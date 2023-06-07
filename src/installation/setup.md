@@ -7,8 +7,6 @@ order: 4
 
 ## 运行`bedrock_server_mod.exe`
 
----
-
 - 安装成功会出现如下内容
   ![运行](../../images/install/welcome.png)
 

@@ -19,13 +19,13 @@ order: 3
 
 [TPR | 随机传送](tpr.md)
 
-[Land | 领地](land.md)
-
 [WebUI | 网页扩展](webui.md)
 
 [MapService | 在线地图](map.md)
 
 [PictureLoader | 图片加载器](picture.md)
+
+[Land | 领地](land.md)
 
 [Sidebar | 侧边栏](sidebar.md)
 
@@ -89,19 +89,14 @@ EditRedstoneTPS：修改红石速率（支持三个维度分开修改）
 
 [MoneyExtensions | 金钱 UI 管理](money.md)
 
-[BehaviorLog | 行为日志(SQLIte 数据库，只记录必要数据，无任何多余文字，保证记录文件最小)](log.md)
+[BehaviorLog | 行为日志](log.md)
+(SQLIte 数据库，只记录必要数据，无任何多余文字，保证记录文件最小)
 
 [Backup | 自动备份](backup.md)
 
 [TransferServerOnClose | 关服传送](closetransfer.md)
 
-### 尚未完成但在计划中的
-
-[ServerTransfer | 跨服传送还没做](transfer.md)
-
-可设置在服务器关闭后传送玩家到其他服务器
-
-[KickToolbox | 踢部分 toolbox 玩家]
+[KickToolbox | 踢部分 toolbox 玩家](kicktoolbox.md)
 老功能，不保证 100%有效，无法过部分改版 toolbox，如需反作弊推荐使用 LLAntiCheat
 
 [Shop | 商店](shop.md)
@@ -117,8 +112,14 @@ motd 的端口
 可以配合这个功能来修复 frp 内网穿透后服务器 motd 显示在局域网的 bug
 伪造 motd 的存档名称（不过通常没啥用
 
+### 尚未完成但在计划中的
+
+[ServerTransfer | 跨服传送还没做](transfer.md)
+
+可设置在服务器关闭后传送玩家到其他服务器
+
 [LLACHelper | 接管 LLAC 的作弊惩罚暂时没做](llachelper.md)
 
 [Hunter | 赏金猎人还没做](hunter.md)
 
-[Blacklist | 黑名单（封禁名单）不一定做](blacklist.md)
+[Blacklist | 黑名单 @voyage27 做了一半](blacklist.md)

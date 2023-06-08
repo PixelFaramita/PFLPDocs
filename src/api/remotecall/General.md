@@ -2,11 +2,10 @@
 title: General
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>SetConfig  - 设置全局配置文件（要求JSON字符串）</b></summary>
-
 ## General::SetConfig
 ### 设置全局配置文件（要求JSON字符串）
 |  形参   | 类型  |
@@ -46,12 +45,7 @@ jsonStr
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetConfig  - 获取全局配置文件（JSON字符串）</b></summary>
-
 ## General::GetConfig
 ### 获取全局配置文件（JSON字符串）
 无参数;
@@ -88,12 +82,7 @@ General_GetConfig()
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>Reload  - 重新加载所有功能的配置文件</b></summary>
-
 ## General::Reload
 ### 重新加载所有功能的配置文件
 无参数;
@@ -128,6 +117,4 @@ General_Reload()
 let General_Reload = RemoteCallAPI.Import_As("PFLP", "General::Reload")
 General_Reload()
 ```
-
- </details>
 

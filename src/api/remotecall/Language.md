@@ -2,11 +2,10 @@
 title: Language
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>Translate  - 翻译</b></summary>
-
 ## Language::Translate
 ### 翻译
 |  形参   | 类型  |
@@ -47,6 +46,4 @@ let Language_Translate = RemoteCallAPI.ImportAs<string,string,string,string>("PF
 	|>Language_Translate.Invoke
 	|>ignore
 ```
-
- </details>
 

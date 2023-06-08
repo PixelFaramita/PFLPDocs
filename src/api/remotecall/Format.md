@@ -2,11 +2,10 @@
 title: Format
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>GetVariableString  - 获取变量</b></summary>
-
 ## Format::GetVariableString
 ### 获取变量
 |  形参   | 类型  |
@@ -48,12 +47,7 @@ let Format_GetVariableString = RemoteCallAPI.ImportAs<string,string,string,strin
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetVariableInt  - 获取变量，但是强制返回int类型</b></summary>
-
 ## Format::GetVariableInt
 ### 获取变量，但是强制返回int类型
 |  形参   | 类型  |
@@ -94,12 +88,7 @@ let Format_GetVariableInt = RemoteCallAPI.ImportAs<int,string,string>("PFLP", "F
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>FormatRawString  - 格式化字符串(反复调用会导致反复解析，推荐使用DefineFormat和GetFormat)</b></summary>
-
 ## Format::FormatRawString
 ### 格式化字符串(反复调用会导致反复解析，推荐使用DefineFormat和GetFormat)
 |  形参   | 类型  |
@@ -140,12 +129,7 @@ let Format_FormatRawString = RemoteCallAPI.ImportAs<string,string,string>("PFLP"
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>DefineFormat  - 定义格式化内容（返回true为创建成功，false为覆盖）</b></summary>
-
 ## Format::DefineFormat
 ### 定义格式化内容（返回true为创建成功，false为覆盖）
 |  形参   | 类型  |
@@ -186,12 +170,7 @@ let Format_DefineFormat = RemoteCallAPI.ImportAs<bool,string,string>("PFLP", "Fo
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>RemoveFormat  - 移除格式化定义（返回true为存在并移除）</b></summary>
-
 ## Format::RemoveFormat
 ### 移除格式化定义（返回true为存在并移除）
 |  形参   | 类型  |
@@ -231,12 +210,7 @@ id
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetFormatWithPlayer  - 通过已定义的ID获取格式化内容（性能更优）</b></summary>
-
 ## Format::GetFormatWithPlayer
 ### 通过已定义的ID获取格式化内容（性能更优）
 |  形参   | 类型  |
@@ -278,12 +252,7 @@ let Format_GetFormatWithPlayer = RemoteCallAPI.ImportAs<string,string,string,str
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetFormatWithPlayerLang  - 通过已定义的ID获取格式化内容（其中playerXuid为玩家上下文，playerLangXuid用于格式化的语言获取）</b></summary>
-
 ## Format::GetFormatWithPlayerLang
 ### 通过已定义的ID获取格式化内容（其中playerXuid为玩家上下文，playerLangXuid用于格式化的语言获取）
 |  形参   | 类型  |
@@ -326,12 +295,7 @@ let Format_GetFormatWithPlayerLang = RemoteCallAPI.ImportAs<string,string,string
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetFormat  - 通过已定义的ID获取格式化内容（不包含玩家上下文）</b></summary>
-
 ## Format::GetFormat
 ### 通过已定义的ID获取格式化内容（不包含玩家上下文）
 |  形参   | 类型  |
@@ -371,6 +335,4 @@ let Format_GetFormat = RemoteCallAPI.ImportAs<string,string,string>("PFLP", "For
 	|>Format_GetFormat.Invoke
 	|>ignore
 ```
-
- </details>
 

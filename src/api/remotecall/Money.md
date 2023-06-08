@@ -2,11 +2,10 @@
 title: Money
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>Get  - 获取玩家(指定玩家名)金钱</b></summary>
-
 ## Money::Get
 ### 获取玩家(指定玩家名)金钱
 |  形参   | 类型  |
@@ -46,12 +45,7 @@ playerXuid
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>Add  - 给玩家(指定玩家名)加钱</b></summary>
-
 ## Money::Add
 ### 给玩家(指定玩家名)加钱
 |  形参   | 类型  |
@@ -92,12 +86,7 @@ let Money_Add = RemoteCallAPI.Import_As<string,int64,string>("PFLP", "Money::Add
 	|>Money_Add.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>Remove  - 给玩家(指定玩家名)减钱</b></summary>
-
 ## Money::Remove
 ### 给玩家(指定玩家名)减钱
 |  形参   | 类型  |
@@ -137,6 +126,4 @@ let Money_Remove = RemoteCallAPI.Import_As<string,int64,string>("PFLP", "Money::
 (playerXuid,count,info)
 	|>Money_Remove.Invoke
 ```
-
- </details>
 

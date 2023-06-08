@@ -2,11 +2,10 @@
 title: Command
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>RenameCommand  - 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)</b></summary>
-
 ## Command::RenameCommand
 ### 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
 |  形参   | 类型  |
@@ -46,12 +45,7 @@ let Command_RenameCommand = RemoteCallAPI.Import_As<string,string>("PFLP", "Comm
 	|>Command_RenameCommand.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>ExecuteInternalCommand  - 执行pflp内部命令(无视重命名,执行的是原始命令)</b></summary>
-
 ## Command::ExecuteInternalCommand
 ### 执行pflp内部命令(无视重命名,执行的是原始命令)
 |  形参   | 类型  |
@@ -92,12 +86,7 @@ let Command_ExecuteInternalCommand = RemoteCallAPI.ImportAs<bool,string,string>(
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>SetCommandDisabled  - 设置命令禁用(可设置提示)(支持任意命令)</b></summary>
-
 ## Command::SetCommandDisabled
 ### 设置命令禁用(可设置提示)(支持任意命令)
 |  形参   | 类型  |
@@ -138,12 +127,7 @@ let Command_SetCommandDisabled = RemoteCallAPI.Import_As<string,string,string>("
 	|>Command_SetCommandDisabled.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>SetCommandEnabled  - 设置命令启用</b></summary>
-
 ## Command::SetCommandEnabled
 ### 设置命令启用
 |  形参   | 类型  |
@@ -182,6 +166,4 @@ let Command_SetCommandEnabled = RemoteCallAPI.Import_As<string,string>("PFLP", "
 (playerXuid,cmd)
 	|>Command_SetCommandEnabled.Invoke
 ```
-
- </details>
 

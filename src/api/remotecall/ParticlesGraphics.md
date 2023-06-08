@@ -2,11 +2,10 @@
 title: ParticlesGraphics
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>DrawBlock  - 给指定方块描框</b></summary>
-
 ## ParticlesGraphics::DrawBlock
 ### 给指定方块描框
 |  形参   | 类型  |
@@ -54,12 +53,7 @@ let ParticlesGraphics_DrawBlock = RemoteCallAPI.Import_As<string,int,int,int,flo
 	|>ParticlesGraphics_DrawBlock.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>DrawBorder  - 给指定区域描框</b></summary>
-
 ## ParticlesGraphics::DrawBorder
 ### 给指定区域描框
 |  形参   | 类型  |
@@ -109,6 +103,4 @@ let ParticlesGraphics_DrawBorder = RemoteCallAPI.Import_As<string,int,int,int,in
 (playerXuid,x1,y1,z1,x2,y2,z2,r,g,b,thickness,time,alpha)
 	|>ParticlesGraphics_DrawBorder.Invoke
 ```
-
- </details>
 

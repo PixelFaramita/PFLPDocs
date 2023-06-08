@@ -2,11 +2,10 @@
 title: Internal
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>CheatPunish  - 作弊反馈（LLAntiCheat用）</b></summary>
-
 ## Internal::CheatPunish
 ### 作弊反馈（LLAntiCheat用）
 |  形参   | 类型  |
@@ -48,6 +47,4 @@ let Internal_CheatPunish = RemoteCallAPI.ImportAs<bool,int,int,nativeint,int>("P
 	|>Internal_CheatPunish.Invoke
 	|>ignore
 ```
-
- </details>
 

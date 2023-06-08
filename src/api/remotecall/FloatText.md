@@ -2,11 +2,10 @@
 title: FloatText
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>Add  - 创建浮空字(给玩家发包)</b></summary>
-
 ## FloatText::Add
 ### 创建浮空字(给玩家发包)
 |  形参   | 类型  |
@@ -50,12 +49,7 @@ let FloatText_Add = RemoteCallAPI.ImportAs<int,string,float,float,float,string>(
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>Remove  - 移除浮空字(给玩家发包)</b></summary>
-
 ## FloatText::Remove
 ### 移除浮空字(给玩家发包)
 |  形参   | 类型  |
@@ -94,6 +88,4 @@ let FloatText_Remove = RemoteCallAPI.Import_As<string,int>("PFLP", "FloatText::R
 (playerXuid,id)
 	|>FloatText_Remove.Invoke
 ```
-
- </details>
 

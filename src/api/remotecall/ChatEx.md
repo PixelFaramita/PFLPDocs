@@ -2,11 +2,10 @@
 title: ChatEx
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>SetNickName  - 设置玩家昵称</b></summary>
-
 ## ChatEx::SetNickName
 ### 设置玩家昵称
 |  形参   | 类型  |
@@ -46,12 +45,7 @@ let ChatEx_SetNickName = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx:
 	|>ChatEx_SetNickName.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>SetFakeName  - 设置玩家聊天时的名字</b></summary>
-
 ## ChatEx::SetFakeName
 ### 设置玩家聊天时的名字
 |  形参   | 类型  |
@@ -91,12 +85,7 @@ let ChatEx_SetFakeName = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx:
 	|>ChatEx_SetFakeName.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>SetEnd  - 设置玩家聊天消息后缀</b></summary>
-
 ## ChatEx::SetEnd
 ### 设置玩家聊天消息后缀
 |  形参   | 类型  |
@@ -136,12 +125,7 @@ let ChatEx_SetEnd = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx::SetE
 	|>ChatEx_SetEnd.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>SetStart  - 设置玩家聊天消息前缀</b></summary>
-
 ## ChatEx::SetStart
 ### 设置玩家聊天消息前缀
 |  形参   | 类型  |
@@ -181,12 +165,7 @@ let ChatEx_SetStart = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx::Se
 	|>ChatEx_SetStart.Invoke
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetNickName  - 获取玩家昵称</b></summary>
-
 ## ChatEx::GetNickName
 ### 获取玩家昵称
 |  形参   | 类型  |
@@ -226,12 +205,7 @@ playerXuid
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetFakeName  - 获取玩家聊天时的名字</b></summary>
-
 ## ChatEx::GetFakeName
 ### 获取玩家聊天时的名字
 |  形参   | 类型  |
@@ -271,12 +245,7 @@ playerXuid
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetEnd  - 获取玩家聊天消息后缀</b></summary>
-
 ## ChatEx::GetEnd
 ### 获取玩家聊天消息后缀
 |  形参   | 类型  |
@@ -316,12 +285,7 @@ playerXuid
 	|>ignore
 ```
 
- </details>
-
 ---
- <details>
- <summary><b>GetStart  - 获取玩家聊天消息前缀</b></summary>
-
 ## ChatEx::GetStart
 ### 获取玩家聊天消息前缀
 |  形参   | 类型  |
@@ -360,6 +324,4 @@ playerXuid
 	|>ChatEx_GetStart.Invoke
 	|>ignore
 ```
-
- </details>
 

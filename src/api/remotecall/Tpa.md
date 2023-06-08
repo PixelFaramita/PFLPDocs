@@ -2,11 +2,10 @@
 title: Tpa
 ---
 
+[[toc]]
+
 
 ---
- <details>
- <summary><b>GetTemp  - 获取指定玩家的Tpa缓存（JSON字符串）</b></summary>
-
 ## Tpa::GetTemp
 ### 获取指定玩家的Tpa缓存（JSON字符串）
 |  形参   | 类型  |
@@ -45,6 +44,4 @@ playerXuid
 	|>Tpa_GetTemp.Invoke
 	|>ignore
 ```
-
- </details>
 

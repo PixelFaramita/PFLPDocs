@@ -1,0 +1,50 @@
+---
+title: Language
+icon: laptop-code
+---
+
+> <details>
+> <summary><b>Translate  - 翻译</b></summary>
+>
+>## Language::Translate
+>### 翻译
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| fromLanguage | string |
+>| toLanguage | string |
+>| text | string |
+>返回值类型：string;
+> - JavaScript
+>```js
+>/** 翻译 返回值类型：string */
+>const Language_Translate = ll.import("PFLP", "Language::Translate");
+>let result = Language_Translate(fromLanguage,toLanguage,text);
+>```
+> - C++
+>```C++
+>// 翻译 返回值类型：string
+>auto Language_Translate = RemoteCall::importAs<std::string(std::string const& fromLanguage,std::string const& toLanguage,std::string const& text)>("PFLP", "Language::Translate");
+>auto result = Language_Translate(fromLanguage,toLanguage,text);
+>```
+> - C#
+>```C#
+>// 翻译 返回值类型：string
+>var Language_Translate = RemoteCallAPI.ImportAs<string,string,string,string>("PFLP", "Language::Translate");
+>var result = Language_Translate(fromLanguage,toLanguage,text);
+>```
+> - Visual Basic .NET
+>```vb
+>' 翻译 返回值类型：string
+>Dim Language_Translate = RemoteCallAPI.ImportAs(Of String,String,String,String)("PFLP", "Language::Translate")
+>Dim result = Language_Translate(fromLanguage,toLanguage,text)
+>```
+> - F#
+>```F#
+>// 翻译 返回值类型：string
+>let Language_Translate = RemoteCallAPI.ImportAs<string,string,string,string>("PFLP", "Language::Translate")
+>(fromLanguage,toLanguage,text)
+>	|>Language_Translate.Invoke
+>	|>ignore
+>```
+>
+> </details>

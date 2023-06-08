@@ -18,6 +18,7 @@ order: 190
 
 ```json
 {
+  //key : 菜单ID
   "MainMenu": {
     //绑定物品，如钟，这样玩家使用钟右键即可打开菜单
     "BindItem": "clock",
@@ -42,7 +43,7 @@ order: 190
         "CostMoney": 0,
         //按钮图标
         "ImageUrl": "textures/ui/world_glyph_color_2x",
-        //按钮点击事件
+        //按钮点击事件，可触发多个回调
         "Actions": [
           {
             //按钮点击事件类型
@@ -53,7 +54,8 @@ order: 190
             //      ExecuteCmd - 执行命令，以execute as的方式以玩家身份执行，基本类似RunCmdAsOP
             //      OpenForm - 打开表单
             "Type": "OpenForm",
-            "Value": "Tpmenu",
+            "Value": "Tpmenu", //菜单ID
+            //点击关闭后是否返回上一级菜单
             "BackOnClose": true
           }
         ]
@@ -91,69 +93,6 @@ order: 190
           {
             "Type": "RunCmdAs",
             "Values": ["/shop"]
-          }
-        ]
-      },
-      {
-        "Text": ["►§3§lRPG系统§r◄", "§7[§b变得更强§7]"],
-        "RequireOP": false,
-        "CostMoney": 0,
-        "ImageUrl": "textures/ui/icon_recipe_equipment",
-        "Actions": [
-          {
-            "Type": "OpenForm",
-            "Value": "RPG",
-            "BackOnClose": true
-          }
-        ]
-      },
-      {
-        "Text": ["►§g§l玩家商店§r◄", "§7[§e玩家交易§7]"],
-        "RequireOP": false,
-        "CostMoney": 0,
-        "ImageUrl": "textures/ui/icon_multiplayer",
-        "Actions": [
-          {
-            "Type": "RunCmdAs",
-            "Values": ["/ivshop"]
-          }
-        ]
-      },
-      {
-        "Text": ["►§e§l金钱§r◄", "§7[§6个人财产§7]"],
-        "RequireOP": false,
-        "CostMoney": 0,
-        "ImageUrl": "textures/ui/MCoin",
-        "Actions": [
-          {
-            "Type": "RunCmdAs",
-            "Values": ["/money"]
-          }
-        ]
-      },
-      {
-        "Text": ["►§c§lvip菜单§r◄", "§7[§4可飞行§7]"],
-        "RequireOP": false,
-        "CostMoney": 0,
-        "ImageUrl": "textures/ui/permissions_op_crown_hover",
-        "Actions": [
-          {
-            "Type": "OpenForm",
-            "Value": "vipMenu",
-            "BackOnClose": true
-          }
-        ]
-      },
-      {
-        "Text": "§l其他",
-        "RequireOP": false,
-        "CostMoney": 0,
-        "ImageUrl": "textures/ui/settings_glyph_color_2x",
-        "Actions": [
-          {
-            "Type": "OpenForm",
-            "Value": "Menu2",
-            "BackOnClose": true
           }
         ]
       }

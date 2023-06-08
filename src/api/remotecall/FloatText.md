@@ -1,0 +1,95 @@
+---
+title: FloatText
+icon: laptop-code
+---
+
+> <details>
+> <summary><b>Add  - 创建浮空字(给玩家发包)</b></summary>
+>
+>## FloatText::Add
+>### 创建浮空字(给玩家发包)
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| playerXuid | string |
+>| x | float |
+>| y | float |
+>| z | float |
+>| text | string |
+>返回值类型：int;
+> - JavaScript
+>```js
+>/** 创建浮空字(给玩家发包) 返回值类型：int */
+>const FloatText_Add = ll.import("PFLP", "FloatText::Add");
+>let result = FloatText_Add(playerXuid,x,y,z,text);
+>```
+> - C++
+>```C++
+>// 创建浮空字(给玩家发包) 返回值类型：int
+>auto FloatText_Add = RemoteCall::importAs<int(std::string const& playerXuid,float const& x,float const& y,float const& z,std::string const& text)>("PFLP", "FloatText::Add");
+>auto result = FloatText_Add(playerXuid,x,y,z,text);
+>```
+> - C#
+>```C#
+>// 创建浮空字(给玩家发包) 返回值类型：int
+>var FloatText_Add = RemoteCallAPI.ImportAs<int,string,float,float,float,string>("PFLP", "FloatText::Add");
+>var result = FloatText_Add(playerXuid,x,y,z,text);
+>```
+> - Visual Basic .NET
+>```vb
+>' 创建浮空字(给玩家发包) 返回值类型：int
+>Dim FloatText_Add = RemoteCallAPI.ImportAs(Of Integer,String,Single,Single,Single,String)("PFLP", "FloatText::Add")
+>Dim result = FloatText_Add(playerXuid,x,y,z,text)
+>```
+> - F#
+>```F#
+>// 创建浮空字(给玩家发包) 返回值类型：int
+>let FloatText_Add = RemoteCallAPI.ImportAs<int,string,float,float,float,string>("PFLP", "FloatText::Add")
+>(playerXuid,x,y,z,text)
+>	|>FloatText_Add.Invoke
+>	|>ignore
+>```
+>
+> </details>
+> <details>
+> <summary><b>Remove  - 移除浮空字(给玩家发包)</b></summary>
+>
+>## FloatText::Remove
+>### 移除浮空字(给玩家发包)
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| playerXuid | string |
+>| id | int |
+>无返回值;
+> - JavaScript
+>```js
+>/** 移除浮空字(给玩家发包) */
+>const FloatText_Remove = ll.import("PFLP", "FloatText::Remove");
+>FloatText_Remove(playerXuid,id);
+>```
+> - C++
+>```C++
+>// 移除浮空字(给玩家发包)
+>auto FloatText_Remove = RemoteCall::importAs<void(std::string const& playerXuid,int const& id)>("PFLP", "FloatText::Remove");
+>FloatText_Remove(playerXuid,id);
+>```
+> - C#
+>```C#
+>// 移除浮空字(给玩家发包)
+>var FloatText_Remove = RemoteCallAPI.Import_As<string,int>("PFLP", "FloatText::Remove");
+>FloatText_Remove(playerXuid,id);
+>```
+> - Visual Basic .NET
+>```vb
+>' 移除浮空字(给玩家发包)
+>Dim FloatText_Remove = RemoteCallAPI.Import_As(Of String,Integer)("PFLP", "FloatText::Remove")
+>FloatText_Remove(playerXuid,id)
+>```
+> - F#
+>```F#
+>// 移除浮空字(给玩家发包)
+>let FloatText_Remove = RemoteCallAPI.Import_As<string,int>("PFLP", "FloatText::Remove")
+>(playerXuid,id)
+>	|>FloatText_Remove.Invoke
+>```
+>
+> </details>

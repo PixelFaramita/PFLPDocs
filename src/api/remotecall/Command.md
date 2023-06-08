@@ -1,0 +1,179 @@
+---
+title: Command
+icon: laptop-code
+---
+
+> <details>
+> <summary><b>RenameCommand  - 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)</b></summary>
+>
+>## Command::RenameCommand
+>### 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| cmd | string |
+>| newCmd | string |
+>无返回值;
+> - JavaScript
+>```js
+>/** 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令) */
+>const Command_RenameCommand = ll.import("PFLP", "Command::RenameCommand");
+>Command_RenameCommand(cmd,newCmd);
+>```
+> - C++
+>```C++
+>// 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
+>auto Command_RenameCommand = RemoteCall::importAs<void(std::string const& cmd,std::string const& newCmd)>("PFLP", "Command::RenameCommand");
+>Command_RenameCommand(cmd,newCmd);
+>```
+> - C#
+>```C#
+>// 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
+>var Command_RenameCommand = RemoteCallAPI.Import_As<string,string>("PFLP", "Command::RenameCommand");
+>Command_RenameCommand(cmd,newCmd);
+>```
+> - Visual Basic .NET
+>```vb
+>' 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
+>Dim Command_RenameCommand = RemoteCallAPI.Import_As(Of String,String)("PFLP", "Command::RenameCommand")
+>Command_RenameCommand(cmd,newCmd)
+>```
+> - F#
+>```F#
+>// 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
+>let Command_RenameCommand = RemoteCallAPI.Import_As<string,string>("PFLP", "Command::RenameCommand")
+>(cmd,newCmd)
+>	|>Command_RenameCommand.Invoke
+>```
+>
+> </details>
+> <details>
+> <summary><b>ExecuteInternalCommand  - 执行pflp内部命令(无视重命名,执行的是原始命令)</b></summary>
+>
+>## Command::ExecuteInternalCommand
+>### 执行pflp内部命令(无视重命名,执行的是原始命令)
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| playerXuid | string |
+>| cmd | string |
+>返回值类型：bool;
+> - JavaScript
+>```js
+>/** 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool */
+>const Command_ExecuteInternalCommand = ll.import("PFLP", "Command::ExecuteInternalCommand");
+>let result = Command_ExecuteInternalCommand(playerXuid,cmd);
+>```
+> - C++
+>```C++
+>// 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool
+>auto Command_ExecuteInternalCommand = RemoteCall::importAs<bool(std::string const& playerXuid,std::string const& cmd)>("PFLP", "Command::ExecuteInternalCommand");
+>auto result = Command_ExecuteInternalCommand(playerXuid,cmd);
+>```
+> - C#
+>```C#
+>// 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool
+>var Command_ExecuteInternalCommand = RemoteCallAPI.ImportAs<bool,string,string>("PFLP", "Command::ExecuteInternalCommand");
+>var result = Command_ExecuteInternalCommand(playerXuid,cmd);
+>```
+> - Visual Basic .NET
+>```vb
+>' 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool
+>Dim Command_ExecuteInternalCommand = RemoteCallAPI.ImportAs(Of Boolean,String,String)("PFLP", "Command::ExecuteInternalCommand")
+>Dim result = Command_ExecuteInternalCommand(playerXuid,cmd)
+>```
+> - F#
+>```F#
+>// 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool
+>let Command_ExecuteInternalCommand = RemoteCallAPI.ImportAs<bool,string,string>("PFLP", "Command::ExecuteInternalCommand")
+>(playerXuid,cmd)
+>	|>Command_ExecuteInternalCommand.Invoke
+>	|>ignore
+>```
+>
+> </details>
+> <details>
+> <summary><b>SetCommandDisabled  - 设置命令禁用(可设置提示)(支持任意命令)</b></summary>
+>
+>## Command::SetCommandDisabled
+>### 设置命令禁用(可设置提示)(支持任意命令)
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| playerXuid | string |
+>| cmd | string |
+>| feedback | string |
+>无返回值;
+> - JavaScript
+>```js
+>/** 设置命令禁用(可设置提示)(支持任意命令) */
+>const Command_SetCommandDisabled = ll.import("PFLP", "Command::SetCommandDisabled");
+>Command_SetCommandDisabled(playerXuid,cmd,feedback);
+>```
+> - C++
+>```C++
+>// 设置命令禁用(可设置提示)(支持任意命令)
+>auto Command_SetCommandDisabled = RemoteCall::importAs<void(std::string const& playerXuid,std::string const& cmd,std::string const& feedback)>("PFLP", "Command::SetCommandDisabled");
+>Command_SetCommandDisabled(playerXuid,cmd,feedback);
+>```
+> - C#
+>```C#
+>// 设置命令禁用(可设置提示)(支持任意命令)
+>var Command_SetCommandDisabled = RemoteCallAPI.Import_As<string,string,string>("PFLP", "Command::SetCommandDisabled");
+>Command_SetCommandDisabled(playerXuid,cmd,feedback);
+>```
+> - Visual Basic .NET
+>```vb
+>' 设置命令禁用(可设置提示)(支持任意命令)
+>Dim Command_SetCommandDisabled = RemoteCallAPI.Import_As(Of String,String,String)("PFLP", "Command::SetCommandDisabled")
+>Command_SetCommandDisabled(playerXuid,cmd,feedback)
+>```
+> - F#
+>```F#
+>// 设置命令禁用(可设置提示)(支持任意命令)
+>let Command_SetCommandDisabled = RemoteCallAPI.Import_As<string,string,string>("PFLP", "Command::SetCommandDisabled")
+>(playerXuid,cmd,feedback)
+>	|>Command_SetCommandDisabled.Invoke
+>```
+>
+> </details>
+> <details>
+> <summary><b>SetCommandEnabled  - 设置命令启用</b></summary>
+>
+>## Command::SetCommandEnabled
+>### 设置命令启用
+>|  形参   | 类型  |
+>|  ----  | ----  |
+>| playerXuid | string |
+>| cmd | string |
+>无返回值;
+> - JavaScript
+>```js
+>/** 设置命令启用 */
+>const Command_SetCommandEnabled = ll.import("PFLP", "Command::SetCommandEnabled");
+>Command_SetCommandEnabled(playerXuid,cmd);
+>```
+> - C++
+>```C++
+>// 设置命令启用
+>auto Command_SetCommandEnabled = RemoteCall::importAs<void(std::string const& playerXuid,std::string const& cmd)>("PFLP", "Command::SetCommandEnabled");
+>Command_SetCommandEnabled(playerXuid,cmd);
+>```
+> - C#
+>```C#
+>// 设置命令启用
+>var Command_SetCommandEnabled = RemoteCallAPI.Import_As<string,string>("PFLP", "Command::SetCommandEnabled");
+>Command_SetCommandEnabled(playerXuid,cmd);
+>```
+> - Visual Basic .NET
+>```vb
+>' 设置命令启用
+>Dim Command_SetCommandEnabled = RemoteCallAPI.Import_As(Of String,String)("PFLP", "Command::SetCommandEnabled")
+>Command_SetCommandEnabled(playerXuid,cmd)
+>```
+> - F#
+>```F#
+>// 设置命令启用
+>let Command_SetCommandEnabled = RemoteCallAPI.Import_As<string,string>("PFLP", "Command::SetCommandEnabled")
+>(playerXuid,cmd)
+>	|>Command_SetCommandEnabled.Invoke
+>```
+>
+> </details>

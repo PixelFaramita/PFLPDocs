@@ -48,7 +48,7 @@ jsonStr
 ---
 ## General::GetConfig
 ### 获取全局配置文件（JSON字符串）
-无参数;
+<table><tr><th>无参数;</th></tr>
 <tr><td colspan="2">返回值类型：string;</td></tr></table>
 
  - JavaScript
@@ -86,7 +86,7 @@ General_GetConfig()
 ---
 ## General::Reload
 ### 重新加载所有功能的配置文件
-无参数;
+<table><tr><th>无参数;</th></tr>
 <tr><td colspan="2">无返回值;</td></tr></table>
 
  - JavaScript

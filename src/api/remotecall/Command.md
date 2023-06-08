@@ -8,11 +8,11 @@ title: Command
 ---
 ## Command::RenameCommand
 ### 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令)
-|  形参   | 类型  |
-|  ----  | ----  |
-| cmd | string |
-| newCmd | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>cmd</td><td>string</td></tr>
+<tr><td>newCmd</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 重命名命令(仅pflp插件的命令，暂不支持其他插件的命令)(newCmd为空字符串则表示隐藏该cmd命令) */
@@ -48,11 +48,11 @@ let Command_RenameCommand = RemoteCallAPI.Import_As<string,string>("PFLP", "Comm
 ---
 ## Command::ExecuteInternalCommand
 ### 执行pflp内部命令(无视重命名,执行的是原始命令)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| cmd | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>cmd</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 执行pflp内部命令(无视重命名,执行的是原始命令) 返回值类型：bool */
@@ -89,12 +89,12 @@ let Command_ExecuteInternalCommand = RemoteCallAPI.ImportAs<bool,string,string>(
 ---
 ## Command::SetCommandDisabled
 ### 设置命令禁用(可设置提示)(支持任意命令)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| cmd | string |
-| feedback | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>cmd</td><td>string</td></tr>
+<tr><td>feedback</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置命令禁用(可设置提示)(支持任意命令) */
@@ -130,11 +130,11 @@ let Command_SetCommandDisabled = RemoteCallAPI.Import_As<string,string,string>("
 ---
 ## Command::SetCommandEnabled
 ### 设置命令启用
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| cmd | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>cmd</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置命令启用 */

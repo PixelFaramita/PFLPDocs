@@ -8,10 +8,10 @@ title: General
 ---
 ## General::SetConfig
 ### 设置全局配置文件（要求JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| jsonStr | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>jsonStr</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置全局配置文件（要求JSON字符串） 返回值类型：bool */
@@ -49,7 +49,8 @@ jsonStr
 ## General::GetConfig
 ### 获取全局配置文件（JSON字符串）
 无参数;
-返回值类型：string;
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取全局配置文件（JSON字符串） 返回值类型：string */
@@ -86,7 +87,8 @@ General_GetConfig()
 ## General::Reload
 ### 重新加载所有功能的配置文件
 无参数;
-无返回值;
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 重新加载所有功能的配置文件 */

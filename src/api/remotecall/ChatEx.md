@@ -8,11 +8,11 @@ title: ChatEx
 ---
 ## ChatEx::SetNickName
 ### 设置玩家昵称
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| nickName | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>nickName</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置玩家昵称 */
@@ -48,11 +48,11 @@ let ChatEx_SetNickName = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx:
 ---
 ## ChatEx::SetFakeName
 ### 设置玩家聊天时的名字
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| fakeName | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>fakeName</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置玩家聊天时的名字 */
@@ -88,11 +88,11 @@ let ChatEx_SetFakeName = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx:
 ---
 ## ChatEx::SetEnd
 ### 设置玩家聊天消息后缀
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| endStr | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>endStr</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置玩家聊天消息后缀 */
@@ -128,11 +128,11 @@ let ChatEx_SetEnd = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx::SetE
 ---
 ## ChatEx::SetStart
 ### 设置玩家聊天消息前缀
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| startStr | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>startStr</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置玩家聊天消息前缀 */
@@ -168,10 +168,10 @@ let ChatEx_SetStart = RemoteCallAPI.Import_As<string,string>("PFLP", "ChatEx::Se
 ---
 ## ChatEx::GetNickName
 ### 获取玩家昵称
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取玩家昵称 返回值类型：string */
@@ -208,10 +208,10 @@ playerXuid
 ---
 ## ChatEx::GetFakeName
 ### 获取玩家聊天时的名字
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取玩家聊天时的名字 返回值类型：string */
@@ -248,10 +248,10 @@ playerXuid
 ---
 ## ChatEx::GetEnd
 ### 获取玩家聊天消息后缀
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取玩家聊天消息后缀 返回值类型：string */
@@ -288,10 +288,10 @@ playerXuid
 ---
 ## ChatEx::GetStart
 ### 获取玩家聊天消息前缀
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取玩家聊天消息前缀 返回值类型：string */

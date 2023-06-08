@@ -8,19 +8,19 @@ title: ParticlesGraphics
 ---
 ## ParticlesGraphics::DrawBlock
 ### 给指定方块描框
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| x | int |
-| y | int |
-| z | int |
-| r | float |
-| g | float |
-| b | float |
-| thickness | float |
-| time | float |
-| alpha | float |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>r</td><td>float</td></tr>
+<tr><td>g</td><td>float</td></tr>
+<tr><td>b</td><td>float</td></tr>
+<tr><td>thickness</td><td>float</td></tr>
+<tr><td>time</td><td>float</td></tr>
+<tr><td>alpha</td><td>float</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 给指定方块描框 */
@@ -56,22 +56,22 @@ let ParticlesGraphics_DrawBlock = RemoteCallAPI.Import_As<string,int,int,int,flo
 ---
 ## ParticlesGraphics::DrawBorder
 ### 给指定区域描框
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| x1 | int |
-| y1 | int |
-| z1 | int |
-| x2 | int |
-| y2 | int |
-| z2 | int |
-| r | float |
-| g | float |
-| b | float |
-| thickness | float |
-| time | float |
-| alpha | float |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>y1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>y2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>r</td><td>float</td></tr>
+<tr><td>g</td><td>float</td></tr>
+<tr><td>b</td><td>float</td></tr>
+<tr><td>thickness</td><td>float</td></tr>
+<tr><td>time</td><td>float</td></tr>
+<tr><td>alpha</td><td>float</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 给指定区域描框 */

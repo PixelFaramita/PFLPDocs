@@ -8,14 +8,14 @@ title: FloatText
 ---
 ## FloatText::Add
 ### 创建浮空字(给玩家发包)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| x | float |
-| y | float |
-| z | float |
-| text | string |
-返回值类型：int;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>text</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：int;</td></tr></table>
+
  - JavaScript
 ```js
 /** 创建浮空字(给玩家发包) 返回值类型：int */
@@ -52,11 +52,11 @@ let FloatText_Add = RemoteCallAPI.ImportAs<int,string,float,float,float,string>(
 ---
 ## FloatText::Remove
 ### 移除浮空字(给玩家发包)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| id | int |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>id</td><td>int</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 移除浮空字(给玩家发包) */

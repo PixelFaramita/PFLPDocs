@@ -8,12 +8,12 @@ title: Language
 ---
 ## Language::Translate
 ### 翻译
-|  形参   | 类型  |
-|  ----  | ----  |
-| fromLanguage | string |
-| toLanguage | string |
-| text | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>fromLanguage</td><td>string</td></tr>
+<tr><td>toLanguage</td><td>string</td></tr>
+<tr><td>text</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 翻译 返回值类型：string */

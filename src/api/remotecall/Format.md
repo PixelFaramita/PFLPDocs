@@ -8,12 +8,12 @@ title: Format
 ---
 ## Format::GetVariableString
 ### 获取变量
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| name | string |
-| format | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>name</td><td>string</td></tr>
+<tr><td>format</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取变量 返回值类型：string */
@@ -50,11 +50,11 @@ let Format_GetVariableString = RemoteCallAPI.ImportAs<string,string,string,strin
 ---
 ## Format::GetVariableInt
 ### 获取变量，但是强制返回int类型
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| name | string |
-返回值类型：int;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>name</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：int;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取变量，但是强制返回int类型 返回值类型：int */
@@ -91,11 +91,11 @@ let Format_GetVariableInt = RemoteCallAPI.ImportAs<int,string,string>("PFLP", "F
 ---
 ## Format::FormatRawString
 ### 格式化字符串(反复调用会导致反复解析，推荐使用DefineFormat和GetFormat)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| rawFormat | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>rawFormat</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 格式化字符串(反复调用会导致反复解析，推荐使用DefineFormat和GetFormat) 返回值类型：string */
@@ -132,11 +132,11 @@ let Format_FormatRawString = RemoteCallAPI.ImportAs<string,string,string>("PFLP"
 ---
 ## Format::DefineFormat
 ### 定义格式化内容（返回true为创建成功，false为覆盖）
-|  形参   | 类型  |
-|  ----  | ----  |
-| id | string |
-| rawFormat | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>id</td><td>string</td></tr>
+<tr><td>rawFormat</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 定义格式化内容（返回true为创建成功，false为覆盖） 返回值类型：bool */
@@ -173,10 +173,10 @@ let Format_DefineFormat = RemoteCallAPI.ImportAs<bool,string,string>("PFLP", "Fo
 ---
 ## Format::RemoveFormat
 ### 移除格式化定义（返回true为存在并移除）
-|  形参   | 类型  |
-|  ----  | ----  |
-| id | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>id</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 移除格式化定义（返回true为存在并移除） 返回值类型：bool */
@@ -213,12 +213,12 @@ id
 ---
 ## Format::GetFormatWithPlayer
 ### 通过已定义的ID获取格式化内容（性能更优）
-|  形参   | 类型  |
-|  ----  | ----  |
-| id | string |
-| playerXuid | string |
-| extra | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>id</td><td>string</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>extra</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 通过已定义的ID获取格式化内容（性能更优） 返回值类型：string */
@@ -255,13 +255,13 @@ let Format_GetFormatWithPlayer = RemoteCallAPI.ImportAs<string,string,string,str
 ---
 ## Format::GetFormatWithPlayerLang
 ### 通过已定义的ID获取格式化内容（其中playerXuid为玩家上下文，playerLangXuid用于格式化的语言获取）
-|  形参   | 类型  |
-|  ----  | ----  |
-| id | string |
-| playerXuid | string |
-| playerLangXuid | string |
-| extra | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>id</td><td>string</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>playerLangXuid</td><td>string</td></tr>
+<tr><td>extra</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 通过已定义的ID获取格式化内容（其中playerXuid为玩家上下文，playerLangXuid用于格式化的语言获取） 返回值类型：string */
@@ -298,11 +298,11 @@ let Format_GetFormatWithPlayerLang = RemoteCallAPI.ImportAs<string,string,string
 ---
 ## Format::GetFormat
 ### 通过已定义的ID获取格式化内容（不包含玩家上下文）
-|  形参   | 类型  |
-|  ----  | ----  |
-| id | string |
-| extra | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>id</td><td>string</td></tr>
+<tr><td>extra</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 通过已定义的ID获取格式化内容（不包含玩家上下文） 返回值类型：string */

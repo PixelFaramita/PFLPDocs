@@ -8,10 +8,10 @@ title: Tpa
 ---
 ## Tpa::GetTemp
 ### 获取指定玩家的Tpa缓存（JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string */

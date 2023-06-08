@@ -8,10 +8,10 @@ title: Money
 ---
 ## Money::Get
 ### 获取玩家(指定玩家名)金钱
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：long;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：long;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取玩家(指定玩家名)金钱 返回值类型：long */
@@ -48,12 +48,12 @@ playerXuid
 ---
 ## Money::Add
 ### 给玩家(指定玩家名)加钱
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| count | long |
-| info | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>count</td><td>long</td></tr>
+<tr><td>info</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 给玩家(指定玩家名)加钱 */
@@ -89,12 +89,12 @@ let Money_Add = RemoteCallAPI.Import_As<string,int64,string>("PFLP", "Money::Add
 ---
 ## Money::Remove
 ### 给玩家(指定玩家名)减钱
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| count | long |
-| info | string |
-无返回值;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>count</td><td>long</td></tr>
+<tr><td>info</td><td>string</td></tr>
+<tr><td colspan="2">无返回值;</td></tr></table>
+
  - JavaScript
 ```js
 /** 给玩家(指定玩家名)减钱 */

@@ -8,16 +8,16 @@ title: Lands
 ---
 ## Lands::CheckCubeHasLand
 ### 检查指定立方体区域(float)是否有领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | float |
-| y1 | float |
-| z1 | float |
-| x2 | float |
-| y2 | float |
-| z2 | float |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>float</td></tr>
+<tr><td>y1</td><td>float</td></tr>
+<tr><td>z1</td><td>float</td></tr>
+<tr><td>x2</td><td>float</td></tr>
+<tr><td>y2</td><td>float</td></tr>
+<tr><td>z2</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定立方体区域(float)是否有领地 返回值类型：bool */
@@ -54,16 +54,16 @@ let Lands_CheckCubeHasLand = RemoteCallAPI.ImportAs<bool,float,float,float,float
 ---
 ## Lands::CheckCubeHasLandInt
 ### 检查指定立方体区域(int)是否有领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | int |
-| y1 | int |
-| z1 | int |
-| x2 | int |
-| y2 | int |
-| z2 | int |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>y1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>y2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定立方体区域(int)是否有领地 返回值类型：bool */
@@ -100,13 +100,13 @@ let Lands_CheckCubeHasLandInt = RemoteCallAPI.ImportAs<bool,int,int,int,int,int,
 ---
 ## Lands::CheckPosHasLand
 ### 检查指定坐标(float)是否有领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(float)是否有领地 返回值类型：bool */
@@ -143,13 +143,13 @@ let Lands_CheckPosHasLand = RemoteCallAPI.ImportAs<bool,float,float,float,int>("
 ---
 ## Lands::CheckPosHasLandInt
 ### 检查指定坐标(int)是否有领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(int)是否有领地 返回值类型：bool */
@@ -186,16 +186,16 @@ let Lands_CheckPosHasLandInt = RemoteCallAPI.ImportAs<bool,int,int,int,int>("PFL
 ---
 ## Lands::GetLandByCube
 ### 获取立方体区域(float)领地信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | float |
-| y1 | float |
-| z1 | float |
-| x2 | float |
-| y2 | float |
-| z2 | float |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>float</td></tr>
+<tr><td>y1</td><td>float</td></tr>
+<tr><td>z1</td><td>float</td></tr>
+<tr><td>x2</td><td>float</td></tr>
+<tr><td>y2</td><td>float</td></tr>
+<tr><td>z2</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取立方体区域(float)领地信息（返回JSON字符串） 返回值类型：string */
@@ -232,16 +232,16 @@ let Lands_GetLandByCube = RemoteCallAPI.ImportAs<string,float,float,float,float,
 ---
 ## Lands::GetLandByCubeInt
 ### 获取立方体区域(int)领地信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | int |
-| y1 | int |
-| z1 | int |
-| x2 | int |
-| y2 | int |
-| z2 | int |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>y1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>y2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取立方体区域(int)领地信息（返回JSON字符串） 返回值类型：string */
@@ -278,13 +278,13 @@ let Lands_GetLandByCubeInt = RemoteCallAPI.ImportAs<string,int,int,int,int,int,i
 ---
 ## Lands::GetLandByPos
 ### 获取指定坐标(float)领地信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(float)领地信息（返回JSON字符串） 返回值类型：string */
@@ -321,13 +321,13 @@ let Lands_GetLandByPos = RemoteCallAPI.ImportAs<string,float,float,float,int>("P
 ---
 ## Lands::GetLandByPosInt
 ### 获取指定坐标(int)领地信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(int)领地信息（返回JSON字符串） 返回值类型：string */
@@ -364,16 +364,16 @@ let Lands_GetLandByPosInt = RemoteCallAPI.ImportAs<string,int,int,int,int>("PFLP
 ---
 ## Lands::GetLandInfoByCube
 ### 获取立方体区域(float)领地数据源详细信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | float |
-| y1 | float |
-| z1 | float |
-| x2 | float |
-| y2 | float |
-| z2 | float |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>float</td></tr>
+<tr><td>y1</td><td>float</td></tr>
+<tr><td>z1</td><td>float</td></tr>
+<tr><td>x2</td><td>float</td></tr>
+<tr><td>y2</td><td>float</td></tr>
+<tr><td>z2</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取立方体区域(float)领地数据源详细信息（返回JSON字符串） 返回值类型：string */
@@ -410,16 +410,16 @@ let Lands_GetLandInfoByCube = RemoteCallAPI.ImportAs<string,float,float,float,fl
 ---
 ## Lands::GetLandInfoByCubeInt
 ### 获取立方体区域(int)领地数据源详细信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | int |
-| y1 | int |
-| z1 | int |
-| x2 | int |
-| y2 | int |
-| z2 | int |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>y1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>y2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取立方体区域(int)领地数据源详细信息（返回JSON字符串） 返回值类型：string */
@@ -456,13 +456,13 @@ let Lands_GetLandInfoByCubeInt = RemoteCallAPI.ImportAs<string,int,int,int,int,i
 ---
 ## Lands::GetLandInfoByPos
 ### 获取指定坐标(float)领地数据源详细信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(float)领地数据源详细信息（返回JSON字符串） 返回值类型：string */
@@ -499,13 +499,13 @@ let Lands_GetLandInfoByPos = RemoteCallAPI.ImportAs<string,float,float,float,int
 ---
 ## Lands::GetLandInfoByPosInt
 ### 获取指定坐标(int)领地数据源详细信息（返回JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(int)领地数据源详细信息（返回JSON字符串） 返回值类型：string */
@@ -542,14 +542,14 @@ let Lands_GetLandInfoByPosInt = RemoteCallAPI.ImportAs<string,int,int,int,int>("
 ---
 ## Lands::SetLandInfoByPos
 ### 设置指定坐标(float)领地数据源详细信息（传入JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-| landinfo | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>landinfo</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置指定坐标(float)领地数据源详细信息（传入JSON字符串） 返回值类型：bool */
@@ -586,14 +586,14 @@ let Lands_SetLandInfoByPos = RemoteCallAPI.ImportAs<bool,float,float,float,int,s
 ---
 ## Lands::SetLandInfoByPosInt
 ### 设置或修改指定坐标(int)领地数据源详细信息（传入JSON字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| landinfo | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>landinfo</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 设置或修改指定坐标(int)领地数据源详细信息（传入JSON字符串） 返回值类型：bool */
@@ -630,15 +630,15 @@ let Lands_SetLandInfoByPosInt = RemoteCallAPI.ImportAs<bool,int,int,int,int,stri
 ---
 ## Lands::CreateLand2D
 ### 新建领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | int |
-| z1 | int |
-| x2 | int |
-| z2 | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 新建领地 返回值类型：bool */
@@ -675,17 +675,17 @@ let Lands_CreateLand2D = RemoteCallAPI.ImportAs<bool,int,int,int,int,int,string>
 ---
 ## Lands::CreateLand3D
 ### 新建领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x1 | int |
-| y1 | int |
-| z1 | int |
-| x2 | int |
-| y2 | int |
-| z2 | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x1</td><td>int</td></tr>
+<tr><td>y1</td><td>int</td></tr>
+<tr><td>z1</td><td>int</td></tr>
+<tr><td>x2</td><td>int</td></tr>
+<tr><td>y2</td><td>int</td></tr>
+<tr><td>z2</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 新建领地 返回值类型：bool */
@@ -722,13 +722,13 @@ let Lands_CreateLand3D = RemoteCallAPI.ImportAs<bool,int,int,int,int,int,int,int
 ---
 ## Lands::DeleteLandByPos
 ### 删除指定坐标(float)的领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 删除指定坐标(float)的领地 返回值类型：bool */
@@ -765,13 +765,13 @@ let Lands_DeleteLandByPos = RemoteCallAPI.ImportAs<bool,float,float,float,int>("
 ---
 ## Lands::DeleteLandByPosInt
 ### 删除指定坐标(int)的领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 删除指定坐标(int)的领地 返回值类型：bool */
@@ -808,14 +808,14 @@ let Lands_DeleteLandByPosInt = RemoteCallAPI.ImportAs<bool,int,int,int,int>("PFL
 ---
 ## Lands::GetLandPermissionByPos
 ### 获取指定坐标(float)领地权限（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(float)领地权限（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串） 返回值类型：string */
@@ -852,14 +852,14 @@ let Lands_GetLandPermissionByPos = RemoteCallAPI.ImportAs<string,float,float,flo
 ---
 ## Lands::GetLandPermissionByPosInt
 ### 获取指定坐标(int)领地权限（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 获取指定坐标(int)领地权限（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串） 返回值类型：string */
@@ -896,15 +896,15 @@ let Lands_GetLandPermissionByPosInt = RemoteCallAPI.ImportAs<string,int,int,int,
 ---
 ## Lands::CheckLandPermissionByPos
 ### 检查指定坐标(float)领地是否有指定权限（permissionId参考GetLandPermissionByPos返回的key）（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| permissionId | string |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>permissionId</td><td>string</td></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(float)领地是否有指定权限（permissionId参考GetLandPermissionByPos返回的key）（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串） 返回值类型：bool */
@@ -941,15 +941,15 @@ let Lands_CheckLandPermissionByPos = RemoteCallAPI.ImportAs<bool,string,float,fl
 ---
 ## Lands::CheckLandPermissionByPosInt
 ### 检查指定坐标(int)领地是否有指定权限（permissionId参考GetLandPermissionByPos返回的key）（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| permissionId | string |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>permissionId</td><td>string</td></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(int)领地是否有指定权限（permissionId参考GetLandPermissionByPos返回的key）（返回JSON字符串字典{key:boolean}）（可指定玩家否则playerXuid填写空字符串） 返回值类型：bool */
@@ -986,14 +986,14 @@ let Lands_CheckLandPermissionByPosInt = RemoteCallAPI.ImportAs<bool,string,int,i
 ---
 ## Lands::CheckPlayerIsLandOwnerByPos
 ### 检查玩家是否是指定坐标(float)领地的主人
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查玩家是否是指定坐标(float)领地的主人 返回值类型：bool */
@@ -1030,14 +1030,14 @@ let Lands_CheckPlayerIsLandOwnerByPos = RemoteCallAPI.ImportAs<bool,float,float,
 ---
 ## Lands::CheckPlayerIsLandOwnerByPosInt
 ### 检查玩家是否是指定坐标(int)领地的主人
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查玩家是否是指定坐标(int)领地的主人 返回值类型：bool */
@@ -1074,14 +1074,14 @@ let Lands_CheckPlayerIsLandOwnerByPosInt = RemoteCallAPI.ImportAs<bool,int,int,i
 ---
 ## Lands::CheckIsLandSharedToPlayerByPos
 ### 检查指定坐标(float)领地是否共享给指定玩家（检查具体权限请使用CheckLandPermissionByPos）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | float |
-| y | float |
-| z | float |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>float</td></tr>
+<tr><td>y</td><td>float</td></tr>
+<tr><td>z</td><td>float</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(float)领地是否共享给指定玩家（检查具体权限请使用CheckLandPermissionByPos） 返回值类型：bool */
@@ -1118,14 +1118,14 @@ let Lands_CheckIsLandSharedToPlayerByPos = RemoteCallAPI.ImportAs<bool,float,flo
 ---
 ## Lands::CheckIsLandSharedToPlayerByPosInt
 ### 检查指定坐标(int)领地是否共享给指定玩家（检查具体权限请使用CheckLandPermissionByPos）
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 检查指定坐标(int)领地是否共享给指定玩家（检查具体权限请使用CheckLandPermissionByPos） 返回值类型：bool */
@@ -1162,14 +1162,14 @@ let Lands_CheckIsLandSharedToPlayerByPosInt = RemoteCallAPI.ImportAs<bool,int,in
 ---
 ## Lands::CheckPlayerHasCreateChestPermission
 ### (请使用GetLandPermissionByPos)  检查玩家在指定坐标(int)领地是否有开箱（方块交互）、放置、破坏的权限(主要用于锁箱插件)
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** (请使用GetLandPermissionByPos)  检查玩家在指定坐标(int)领地是否有开箱（方块交互）、放置、破坏的权限(主要用于锁箱插件) 返回值类型：bool */
@@ -1206,14 +1206,14 @@ let Lands_CheckPlayerHasCreateChestPermission = RemoteCallAPI.ImportAs<bool,int,
 ---
 ## Lands::CheckPlayerHasOpenChestPermission
 ### (请使用GetLandPermissionByPos)  检查玩家在指定坐标(int)领地是否有使用箱子的权限(主要用于锁箱插件)
-|  形参   | 类型  |
-|  ----  | ----  |
-| x | int |
-| y | int |
-| z | int |
-| dimensionId | int |
-| playerXuid | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>x</td><td>int</td></tr>
+<tr><td>y</td><td>int</td></tr>
+<tr><td>z</td><td>int</td></tr>
+<tr><td>dimensionId</td><td>int</td></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** (请使用GetLandPermissionByPos)  检查玩家在指定坐标(int)领地是否有使用箱子的权限(主要用于锁箱插件) 返回值类型：bool */
@@ -1250,10 +1250,10 @@ let Lands_CheckPlayerHasOpenChestPermission = RemoteCallAPI.ImportAs<bool,int,in
 ---
 ## Lands::GetPlayerAllPermissionGroupId
 ### 取玩家所有权限组ID（返回["id1","id2"...]字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 取玩家所有权限组ID（返回["id1","id2"...]字符串） 返回值类型：string */
@@ -1290,11 +1290,11 @@ playerXuid
 ---
 ## Lands::GetPlayerPermissionGroup
 ### 取玩家权限组内容(指定ID)（返回JSON对象字符串）
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| permissionGroupId | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>permissionGroupId</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 取玩家权限组内容(指定ID)（返回JSON对象字符串） 返回值类型：string */
@@ -1331,11 +1331,11 @@ let Lands_GetPlayerPermissionGroup = RemoteCallAPI.ImportAs<string,string,string
 ---
 ## Lands::DeletePlayerPermissionGroup
 ### 删玩家权限组(指定ID)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| permissionGroupId | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>permissionGroupId</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 删玩家权限组(指定ID) 返回值类型：bool */
@@ -1372,12 +1372,12 @@ let Lands_DeletePlayerPermissionGroup = RemoteCallAPI.ImportAs<bool,string,strin
 ---
 ## Lands::EditPlayerPermissionGroup
 ### 修改家权限组内容(指定ID)
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| permissionGroupId | string |
-| jsonString | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>permissionGroupId</td><td>string</td></tr>
+<tr><td>jsonString</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 修改家权限组内容(指定ID) 返回值类型：bool */
@@ -1414,12 +1414,12 @@ let Lands_EditPlayerPermissionGroup = RemoteCallAPI.ImportAs<bool,string,string,
 ---
 ## Lands::AddPlayerPermissionGroup
 ### 添加权限组
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-| permissionGroupId | string |
-| jsonString | string |
-返回值类型：bool;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td>permissionGroupId</td><td>string</td></tr>
+<tr><td>jsonString</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：bool;</td></tr></table>
+
  - JavaScript
 ```js
 /** 添加权限组 返回值类型：bool */
@@ -1456,10 +1456,10 @@ let Lands_AddPlayerPermissionGroup = RemoteCallAPI.ImportAs<bool,string,string,s
 ---
 ## Lands::GetLandsOwnedByPlayer
 ### 取玩家拥有的领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 取玩家拥有的领地 返回值类型：string */
@@ -1496,10 +1496,10 @@ playerXuid
 ---
 ## Lands::GetLandsSharedToPlayer
 ### 取共享给玩家的领地
-|  形参   | 类型  |
-|  ----  | ----  |
-| playerXuid | string |
-返回值类型：string;
+<table><tr><th>形参</th><th>类型</th></tr>
+<tr><td>playerXuid</td><td>string</td></tr>
+<tr><td colspan="2">返回值类型：string;</td></tr></table>
+
  - JavaScript
 ```js
 /** 取共享给玩家的领地 返回值类型：string */

@@ -88,6 +88,7 @@ EditRedstoneTPS：修改红石速率（支持三个维度分开修改）
 目前只做了弹射物击中的反馈
 
 [MoneyExtensions | 金钱 UI 管理](money.md)
+[MoneyApi| 金钱接口](money.md)
 
 [BehaviorLog | 行为日志](log.md)
 (SQLIte 数据库，只记录必要数据，无任何多余文字，保证记录文件最小)

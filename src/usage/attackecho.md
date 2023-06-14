@@ -13,3 +13,7 @@ order: 260
     "ShowActionbar": true
 }
 ```
+
+## 使用效果
+
+... todo

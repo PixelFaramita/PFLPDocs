@@ -113,6 +113,10 @@ motd 的端口
 可以配合这个功能来修复 frp 内网穿透后服务器 motd 显示在局域网的 bug
 伪造 motd 的存档名称（不过通常没啥用
 
+[PvPManager | 个人 PvP 状态管理](pvp.md)
+
+[frpc | 内网穿透 IP 获取](frpc.md)
+
 ### 尚未完成但在计划中的
 
 [ServerTransfer | 跨服传送还没做](transfer.md)

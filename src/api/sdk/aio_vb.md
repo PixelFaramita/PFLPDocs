@@ -8,7 +8,7 @@ order: 1002
 ---
 <details><summary>VB imports / 直接导入</summary>
 
-``` VB
+``` vb
 Imports RemoteCallAPI = LiteLoader.RemoteCall.RemoteCallAPI;
 
 ' 设置全局配置文件（要求JSON字符串） 返回值类型：bool
@@ -156,7 +156,7 @@ Dim Money_Remove = RemoteCallAPI.ImportAs(Of Action(Of String,Long,String))("PFL
 </details>
 <details><summary>VB Module / 模块类定义（推荐）</summary>
 
-``` VB
+``` vb
 Imports RemoteCallAPI = LiteLoader.RemoteCall.RemoteCallAPI;
 
 Friend Module PFLP

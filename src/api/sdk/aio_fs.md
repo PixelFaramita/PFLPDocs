@@ -8,7 +8,7 @@ order: 1002
 ---
 <details><summary>F# imports / 直接导入</summary>
 
-``` F#
+``` fsharp
 #r "LiteLoader.NET"
 open LiteLoader.RemoteCall
 
@@ -157,7 +157,7 @@ let Money_Remove = RemoteCallAPI.ImportAs<Action<string,int64,string>>("PFLP", "
 </details>
 <details><summary>F# module / F# 模块类（推荐）</summary>
 
-``` F#
+``` fsharp
 #r "LiteLoader.NET"
 open LiteLoader.RemoteCall
 

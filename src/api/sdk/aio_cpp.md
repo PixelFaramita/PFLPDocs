@@ -11,6 +11,10 @@ auto General_SetConfig = RemoteCall::importAs<bool(std::string const& jsonStr)>(
 auto General_GetConfig = RemoteCall::importAs<std::string()>("PFLP", "General::GetConfig");
 // 重新加载所有功能的配置文件
 auto General_Reload = RemoteCall::importAs<void()>("PFLP", "General::Reload");
+// 获取全部IP归属地缓存（JSON字符串） 返回值类型：string
+auto Location_GetAllCacheData = RemoteCall::importAs<std::string()>("PFLP", "Location::GetAllCacheData");
+//  设置IP归属地缓存
+auto Location_SetIpLocation = RemoteCall::importAs<void(std::string const& ip,std::string const& country,std::string const& province,std::string const& city,std::string const& area,std::string const& isp,std::string const& language)>("PFLP", "Location::SetIpLocation");
 // 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string
 auto Tpa_GetTemp = RemoteCall::importAs<std::string(std::string const& playerXuid)>("PFLP", "Tpa::GetTemp");
 // 获取变量 返回值类型：string

@@ -17,6 +17,10 @@ var General_SetConfig = RemoteCallAPI.ImportAs<Func<string,bool>>("PFLP", "Gener
 var General_GetConfig = RemoteCallAPI.ImportAs<Func<string>>("PFLP", "General::GetConfig");
 // 重新加载所有功能的配置文件
 var General_Reload = RemoteCallAPI.ImportAs<Action>("PFLP", "General::Reload");
+// 获取全部IP归属地缓存（JSON字符串） 返回值类型：string
+var Location_GetAllCacheData = RemoteCallAPI.ImportAs<Func<string>>("PFLP", "Location::GetAllCacheData");
+//  设置IP归属地缓存
+var Location_SetIpLocation = RemoteCallAPI.ImportAs<Action<string,string,string,string,string,string,string>>("PFLP", "Location::SetIpLocation");
 // 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string
 var Tpa_GetTemp = RemoteCallAPI.ImportAs<Func<string,string>>("PFLP", "Tpa::GetTemp");
 // 获取变量 返回值类型：string
@@ -171,6 +175,18 @@ internal static class PFLP {
 		/// <summary> 重新加载所有功能的配置文件 </summary>
 		public static void Reload() {
 			General_Reload_instance.Value();
+		}
+	}
+	public static class Location {
+		private static Lazy<Func<string>>  Location_GetAllCacheData_instance = new(()=> RemoteCallAPI.ImportAs<Func<string>>("PFLP", "Location::GetAllCacheData"));
+		/// <summary> 获取全部IP归属地缓存（JSON字符串） 返回值类型：string </summary>
+		public static string GetAllCacheData() {
+			return Location_GetAllCacheData_instance.Value();
+		}
+		private static Lazy<Action<string,string,string,string,string,string,string>>  Location_SetIpLocation_instance = new(()=> RemoteCallAPI.ImportAs<Action<string,string,string,string,string,string,string>>("PFLP", "Location::SetIpLocation"));
+		/// <summary>  设置IP归属地缓存 </summary>
+		public static void SetIpLocation(string ip,string country,string province,string city,string area,string isp,string language) {
+			Location_SetIpLocation_instance.Value(ip,country,province,city,area,isp,language);
 		}
 	}
 	public static class Tpa {

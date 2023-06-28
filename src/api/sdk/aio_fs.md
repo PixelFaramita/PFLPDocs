@@ -18,6 +18,10 @@ let General_SetConfig = RemoteCallAPI.ImportAs<Func<string,bool>>("PFLP", "Gener
 let General_GetConfig = RemoteCallAPI.ImportAs<Func<string>>("PFLP", "General::GetConfig")
 // 重新加载所有功能的配置文件
 let General_Reload = RemoteCallAPI.ImportAs<Action>("PFLP", "General::Reload")
+// 获取全部IP归属地缓存（JSON字符串） 返回值类型：string
+let Location_GetAllCacheData = RemoteCallAPI.ImportAs<Func<string>>("PFLP", "Location::GetAllCacheData")
+//  设置IP归属地缓存
+let Location_SetIpLocation = RemoteCallAPI.ImportAs<Action<string,string,string,string,string,string,string>>("PFLP", "Location::SetIpLocation")
 // 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string
 let Tpa_GetTemp = RemoteCallAPI.ImportAs<Func<string,string>>("PFLP", "Tpa::GetTemp")
 // 获取变量 返回值类型：string
@@ -171,6 +175,15 @@ module public PFLP =
     /// <summary> 重新加载所有功能的配置文件 </summary>
     let public Reload():unit =
       General_Reload_instance.Value.Invoke()
+  module public Location =
+    let private Location_GetAllCacheData_instance = lazy RemoteCallAPI.ImportAs<Func<string>>("PFLP", "Location::GetAllCacheData")
+    /// <summary> 获取全部IP归属地缓存（JSON字符串） 返回值类型：string </summary>
+    let public GetAllCacheData():string =
+      Location_GetAllCacheData_instance.Value.Invoke()
+    let private Location_SetIpLocation_instance = lazy RemoteCallAPI.ImportAs<Action<string,string,string,string,string,string,string>>("PFLP", "Location::SetIpLocation")
+    /// <summary>  设置IP归属地缓存 </summary>
+    let public SetIpLocation(ip:string)(country:string)(province:string)(city:string)(area:string)(isp:string)(language:string):unit =
+      Location_SetIpLocation_instance.Value.Invoke(ip,country,province,city,area,isp,language)
   module public Tpa =
     let private Tpa_GetTemp_instance = lazy RemoteCallAPI.ImportAs<Func<string,string>>("PFLP", "Tpa::GetTemp")
     /// <summary> 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string </summary>

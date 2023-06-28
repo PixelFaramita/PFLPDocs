@@ -15,6 +15,10 @@ const General_SetConfig = ll.import("PFLP", "General::SetConfig");
 const General_GetConfig = ll.import("PFLP", "General::GetConfig");
 /** 重新加载所有功能的配置文件 */
 const General_Reload = ll.import("PFLP", "General::Reload");
+/** 获取全部IP归属地缓存（JSON字符串） 返回值类型：string */
+const Location_GetAllCacheData = ll.import("PFLP", "Location::GetAllCacheData");
+/**  设置IP归属地缓存 */
+const Location_SetIpLocation = ll.import("PFLP", "Location::SetIpLocation");
 /** 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string */
 const Tpa_GetTemp = ll.import("PFLP", "Tpa::GetTemp");
 /** 获取变量 返回值类型：string */
@@ -167,6 +171,22 @@ const PFLP = {
 		/** 重新加载所有功能的配置文件
 		 */
 		Reload() { (this.General_Reload??=ll.import("PFLP", "General::Reload"))()},
+	},
+	Location : {
+		/** 获取全部IP归属地缓存（JSON字符串） 返回值类型：string
+		 * @returns {string}
+		 */
+		GetAllCacheData() { return (this.Location_GetAllCacheData??=ll.import("PFLP", "Location::GetAllCacheData"))()},
+		/**  设置IP归属地缓存
+		 * @param {string} ip
+		 * @param {string} country
+		 * @param {string} province
+		 * @param {string} city
+		 * @param {string} area
+		 * @param {string} isp
+		 * @param {string} language
+		 */
+		SetIpLocation(ip,country,province,city,area,isp,language) { (this.Location_SetIpLocation??=ll.import("PFLP", "Location::SetIpLocation"))(ip,country,province,city,area,isp,language)},
 	},
 	Tpa : {
 		/** 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string

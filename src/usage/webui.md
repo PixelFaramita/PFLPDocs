@@ -23,6 +23,8 @@ order: 50
     "Debug": false,
     //网站标题
     "HtmlTitle": "网页标题",
+    //网站图标，~开头表示插件配置目录
+    "HtmlFavicon": "~\\favicon.png",
     //功能
     "Functions": {
         //日志查询功能

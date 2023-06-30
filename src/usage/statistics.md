@@ -1,5 +1,5 @@
 ---
-title: PvPManager | 个人 PvP 状态管理
+title: Statistics | 统计变量
 order: 340
 ---
 

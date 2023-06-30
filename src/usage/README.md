@@ -115,6 +115,8 @@ motd 的端口
 
 [PvPManager | 个人 PvP 状态管理](pvp.md)
 
+[Statistics | 统计变量](statistics.md)
+
 [frpc | 内网穿透 IP 获取](frpc.md)
 
 ### 尚未完成但在计划中的

@@ -64,6 +64,19 @@ order: 6
     | %sent%           | %send%                                               | 每秒发送的字节数                                             |
     | %land%           |                                                      | 玩家当前领地                                                 | 类型%land:type%<br>所有者%land:owner%<br> 共享玩家%land:sharedplayers%<br>领地名称%land:displayname% <br>消息留言%land:message% <br>欢迎语%land:welcome%<br>%land:x1%<br>%land:y1%<br>%land:z1%<br>%land:x2%<br>%land:y2%<br>%land:z2%<br>长%land:dx%<br>宽%land:dy%<br>高%land:dz% |
 
+- ### 其他模块变量(需要开启指定模块)
+
+  - #### [Statistics | 统计变量](../usage/statistics.md)
+    | 名称          | 别名         | 功能     |                示例                 |
+    | ------------- | ------------ | -------- | :---------------------------------: |
+    | %online_time% | %onlinetime% | 在线时长 |
+    | %destroy%     |              | 破坏方块 |
+    | %place%       |              | 放置方块 |
+    | %death%       |              | 死亡次数 |
+    | %respawn%     |              | 重生次数 |
+    | %join%        |              | 进服次数 |
+    | %kill%        |              | 击杀次数 | %kill:player%玩家<br>%kill:sheep%羊 |
+
 ## 使用 BEPlaceholderAPI 的变量
 
 支持[BEPlaceholderAPI](https://github.com/LiteLDev/BEPlaceholderAPI)的所有变量，安装 BEPlaceholderAPI 后即可直接使用

@@ -23,6 +23,8 @@ Dim Location_GetAllCacheData = RemoteCallAPI.ImportAs(Of Func(Of String))("PFLP"
 Dim Location_SetIpLocation = RemoteCallAPI.ImportAs(Of Action(Of String,String,String,String,String,String,String))("PFLP", "Location::SetIpLocation")
 ' 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string
 Dim Tpa_GetTemp = RemoteCallAPI.ImportAs(Of Func(Of String,String))("PFLP", "Tpa::GetTemp")
+' 获取指定玩家的统计数据（JSON字符串） 返回值类型：string
+Dim Statistics_GetPlayerStatistics = RemoteCallAPI.ImportAs(Of Func(Of String,String))("PFLP", "Statistics::GetPlayerStatistics")
 ' 获取变量 返回值类型：string
 Dim Format_GetVariableString = RemoteCallAPI.ImportAs(Of Func(Of String,String,String,String))("PFLP", "Format::GetVariableString")
 ' 获取变量，但是强制返回int类型 返回值类型：int
@@ -194,6 +196,13 @@ Friend Module PFLP
 		''' <summary> 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string </summary>
 		Public Shared Function GetTemp(playerXuid As String) As string 
 			Return Tpa_GetTemp_instance.Value(playerXuid)
+		End Function
+	End Class
+	Public NotInheritable Class Statistics
+		Private Shared Statistics_GetPlayerStatistics_instance As Lazy(Of Func(Of String,String))(Function() RemoteCallAPI.ImportAs(Of Func(Of String,String))("PFLP", "Statistics::GetPlayerStatistics"))
+		''' <summary> 获取指定玩家的统计数据（JSON字符串） 返回值类型：string </summary>
+		Public Shared Function GetPlayerStatistics(playerXuid As String) As string 
+			Return Statistics_GetPlayerStatistics_instance.Value(playerXuid)
 		End Function
 	End Class
 	Public NotInheritable Class Format

@@ -17,6 +17,8 @@ auto Location_GetAllCacheData = RemoteCall::importAs<std::string()>("PFLP", "Loc
 auto Location_SetIpLocation = RemoteCall::importAs<void(std::string const& ip,std::string const& country,std::string const& province,std::string const& city,std::string const& area,std::string const& isp,std::string const& language)>("PFLP", "Location::SetIpLocation");
 // 获取指定玩家的Tpa缓存（JSON字符串） 返回值类型：string
 auto Tpa_GetTemp = RemoteCall::importAs<std::string(std::string const& playerXuid)>("PFLP", "Tpa::GetTemp");
+// 获取指定玩家的统计数据（JSON字符串） 返回值类型：string
+auto Statistics_GetPlayerStatistics = RemoteCall::importAs<std::string(std::string const& playerXuid)>("PFLP", "Statistics::GetPlayerStatistics");
 // 获取变量 返回值类型：string
 auto Format_GetVariableString = RemoteCall::importAs<std::string(std::string const& playerXuid,std::string const& name,std::string const& format)>("PFLP", "Format::GetVariableString");
 // 获取变量，但是强制返回int类型 返回值类型：int

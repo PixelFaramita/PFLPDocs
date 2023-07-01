@@ -27,10 +27,10 @@ export default hopeTheme({
       return 1;
     }
     if (v1.type == "dir" && v2.type == "file") {
-      return -1;
+      return 1;
     }
     if (v1.type == "file" && v2.type == "dir") {
-      return 1;
+      return -1;
     }
     if (v1.type == "dir" && v2.type == "dir") {
       return (v1.frontmatter?.order ?? 0) > (v2.frontmatter?.order ?? 0)

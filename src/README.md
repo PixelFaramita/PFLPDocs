@@ -19,14 +19,13 @@ actions:
   - text: 用方
     link: ./usage/
 highlights:
-  # - header: Easy to install
-  #   image: /assets/image/box.svg
-  #   bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-  #   bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
-  #   highlights:
-  #     - title: Run <code>pnpm create vuepress-theme-hope hope-project</code> to create a new project with this theme.
-  #     - title: Run <code>pnpm create vuepress-theme-hope add .</code> in your project root to create a new project with this theme.
-
+  - header: 必备前置
+    # image: /assets/image/box.svg
+    # bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    highlights:
+      - title: LiteLoaderBDS、LiteLoader.NET、手、脑子、义务教育英语水平(或翻译工具)
+      - title: 必备前置前置缺一不可
   # - header: Add things you want in markdown
   #   description: We extended the standard commonMark specification and added tons of new features for you.
   #   image: /assets/image/markdown.svg

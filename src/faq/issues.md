@@ -6,6 +6,8 @@ order: 2
 
 ## Fail to load API money.xxxMoney
 
+[7/3/2023 from Planet, source:QQGroup]
+
 - 此非 PFLP 触发的报错，但可能影响经济系统运行
 - 此为 LLSE(脚本引擎)触发的报错
 - 原因：`LLMoney.dll`未正确加载或`LiteLoader.json`为开启经济接口

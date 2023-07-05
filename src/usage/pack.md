@@ -14,8 +14,7 @@ order: 65
 
 ## 手动加载
 
-- 推荐自动导入
-- 解压即可自动导入
+- 解压到指定目录即可自动加载
 - `plugins\PixelFaramitaLuminousPolymerization\pack\customize\resource_packs\[xxx]\manifest.json`
 - `plugins\PixelFaramitaLuminousPolymerization\pack\customize\behavior_packs\[xxx]\manifest.json`
   > _文件夹直接放入即可加载，不会污染地图目录和服务端目录的行为包/资源包文件夹_

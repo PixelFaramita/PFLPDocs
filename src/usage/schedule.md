@@ -19,6 +19,6 @@ order: 370
 
 ## 说明
 
-- 使用 CornTab 语法描述任务
+- 使用 CornTab 语法描述定时任务
 - `RunCommand`任务执行的命令
 - 其他功能待添加

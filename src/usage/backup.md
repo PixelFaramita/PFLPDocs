@@ -29,7 +29,11 @@ order: 290
     "IncludePluginConfig": true,
     //额外需要备份的文件
     //可使用通配符
-    "Extra": ["plugins/LiteLoader/*.json"]
+    "Extra": ["plugins/LiteLoader/*.json"],
+    //开启自动备份
+    "AutoBackup": true,
+    //自动备份的时间间隔（使用Corntab表达式）
+    "BackupCrontab": "*/1 * * * *"
 }
 ```
 

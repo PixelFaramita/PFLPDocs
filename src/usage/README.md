@@ -117,7 +117,13 @@ motd 的端口
 
 [Statistics | 统计变量](statistics.md)
 
-[frpc | 内网穿透 IP 获取](frpc.md)
+[frpc | 内网穿透 + IP 获取](frpc.md)
+
+[Protect | 保护区](protect.md)
+
+[CommandMap | 命令映射](cmdmap.md)
+
+[ScheduleTask | 定时任务](schedule.md)
 
 ### 尚未完成但在计划中的
 

@@ -23,6 +23,8 @@ order: 3
 
 [MapService | 在线地图](map.md)
 
+[PackManager | 资源包管理器](pack.md)
+
 [PictureLoader | 图片加载器](picture.md)
 
 [Land | 领地](land.md)

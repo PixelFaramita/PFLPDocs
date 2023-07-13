@@ -1,7 +1,7 @@
 ---
 title: 变量与格式化选项
 icon: laptop-code
-order: 6
+order: 7
 ---
 
 ## 内置变量

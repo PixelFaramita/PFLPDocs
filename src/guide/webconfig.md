@@ -1,7 +1,7 @@
 ---
 title: 使用网页配置插件
 icon: laptop-code
-order: 5
+order: 6
 ---
 
 ### 网页配置

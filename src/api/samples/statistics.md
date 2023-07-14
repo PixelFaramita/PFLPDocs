@@ -1,7 +1,7 @@
 ---
 title: 修改统计变量
 icon: laptop-code
-order: 4
+order: 6
 ---
 
 ### 修改[统计数据](../../usage/statistics.md)模块的变量

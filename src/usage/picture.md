@@ -31,7 +31,8 @@ order: 70
   `/picture editor edit` 打开此界面
 - 设置地址
   `/picture editor set xxx.png`设置新的地址
-
+- 旋转图片
+  空手右键方块即可旋转图片
 ## 编辑已有图片
 
 - `/picture edit `

@@ -20,7 +20,7 @@ order: 7
     | %playercount%     | %server_online%<br>%serveronline%                                                               | 在线玩家数量                                                                                     |
     | %version%         | %server_version%<br>%serverversion%                                                             | 服务器版本                                                                                       |
     | %protocol%        | %protocol_version%<br>%server_protocol_version%<br>%protocolversion%<br>%serverprotocolversion% | 服务器协议版本                                                                                   |
-    | %entitycount%     | %total_entities%<br>%server_total_entities%<br>%totalentities%<br>%servertotalentities%         | 服务器试题数量                                                                                   |
+    | %entitycount%     | %total_entities%<br>%server_total_entities%<br>%totalentities%<br>%servertotalentities%         | 服务器实体数量                                                                                   |
     | %ram_bds_used%    | %server_ram_bds_used%<br>%rambdsused%<br>%serverrambdsused%                                     | BDS 内存使用量                                                                                   |
     | %ram_used%        | %server_ram_used%<br>%ramused%<br>%serverramused%                                               | 主机内存使用量                                                                                   |
     | %ram_total%       | %server_ram_total%<br>%ramtotal%<br>%serverramtotal%                                            | 服务器总内存                                                                                     |

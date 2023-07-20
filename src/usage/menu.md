@@ -27,7 +27,7 @@ order: 190
     ```
   - 3. 即可看到Visual Studio Code的语法检查自动提示
     ![补全](../../images/menu/codecomplete.png)  
-  - 4. 按照提示补全即可 
+  - 4. 按照提示补全即可
     ![语法检查](../../images/menu/complete.png)  
 
 

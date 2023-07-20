@@ -10,16 +10,31 @@ order: 190
 ```json
 "Menu": {
     "ModuleEnabled": true,//开启
-    "SaveFormattedJson": true//自动保存格式化的json，会导致菜单中的注释消失
+    "SaveFormattedJson": true,//自动保存格式化的json，会导致菜单中的注释消失
+    "SaveFormattedJsonWithComments": true//是否在菜单中添加注释（推荐熟悉后自行关闭，不然看起来菜单很长）
 }
 ```
 
-- `menu.json`具体配置
+## 菜单配置
+- 配置文件在插件目录`menu`文件夹下
+- 首次打开文件夹是空的，你需要创建第一个菜单文件，不过不用担心，使用现代IDE（如[Visual Studio Code](https://code.visualstudio.com/)），在没有任何示例的情况下你仍然能很快写出属于自己的菜单
+  - 1. 首先在该文件夹下新建一个`菜单名.json`文件，如`menu.json`
+  - 2. 然后在文件中粘入以下内容
+    ```json
+    {
+    "$schema": ".schema.json"
+    }
+    ```
+  - 3. 即可看到Visual Studio Code的语法检查自动提示
+    ![补全](../../menu/codecomplete.png)  
+  - 4. 按照提示补全即可 
+    ![语法检查](../../menu/complete.png)  
+
+
+- `menu.json`具体配置示例
 
 ```json
 {
-  //key : 菜单ID
-  "MainMenu": {
     //绑定物品，如钟，这样玩家使用钟右键即可打开菜单
     "BindItem": "clock",
     //绑定命令，如/menu，这样玩家输入/menu即可打开菜单
@@ -98,5 +113,4 @@ order: 190
       }
     ]
   }
-}
 ```

@@ -26,9 +26,9 @@ order: 190
     }
     ```
   - 3. 即可看到Visual Studio Code的语法检查自动提示
-    ![补全](../../menu/codecomplete.png)  
+    ![补全](../../images/menu/codecomplete.png)  
   - 4. 按照提示补全即可 
-    ![语法检查](../../menu/complete.png)  
+    ![语法检查](../../images/menu/complete.png)  
 
 
 - `menu.json`具体配置示例

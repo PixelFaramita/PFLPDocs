@@ -23,5 +23,5 @@ order: 5
 - ### Home
   - 文件放到`plugins\PFEssentials\data\homelist.json`
 - ### Warp
-  - 文件放到`plugins\PFEssentials\data\homelist.json`
+  - 文件放到`plugins\PFEssentials\data\warplist.json`
 - 其他模块暂无迁移适配

@@ -42,7 +42,7 @@ order: 50
 ## 提示
 
 - OnlineMap 功能需要同时开启 [MapService](map.md)，方可在网页查看地图，否则地图不会时时刷新。
-
+- LogQuery 功能需要同时开启 [BehaviorLog](log.md)
 ## 图骗
 
 - 主页

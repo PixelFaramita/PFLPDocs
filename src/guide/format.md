@@ -12,9 +12,9 @@ order: 7
 
   - 在任意位置使用
 
-    | 名称              | 别名                                                                                            | 功能                                                                                             |                                                                             示例                                                                              |
-    | ----------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-    | %time%            | %date%%now%                                                                                     | 当前时间                                                                                         |                                                                  %time:yyyy-MM-dd-HH-mm-ss%                                                                   |
+    | 名称              | 别名                                                                                            | 功能                                                                                             |                                                                               示例                                                                                |
+    | ----------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+    | %time%            | %date%%now%                                                                                     | 当前时间                                                                                         |                                                                    %time:yyyy-MM-dd-HH-mm-ss%                                                                     |
     | %tps%             | %server_tps%<br>%servertps%                                                                     | 服务器 TPS                                                                                       |
     | %mspt%            | %server_mspt%<br>%servermspt%                                                                   | 服务器 MSPT                                                                                      |
     | %playercount%     | %server_online%<br>%serveronline%                                                               | 在线玩家数量                                                                                     |
@@ -25,7 +25,7 @@ order: 7
     | %ram_used%        | %server_ram_used%<br>%ramused%<br>%serverramused%                                               | 主机内存使用量                                                                                   |
     | %ram_total%       | %server_ram_total%<br>%ramtotal%<br>%serverramtotal%                                            | 服务器总内存                                                                                     |
     | %ram_free%        | %server_ram_free%<br>%ramfree%<br>%serverramfree%                                               | 服务器空闲内存                                                                                   |
-    | %papi%            | %placeholder%<br>%placeholderapi%                                                               | [#PAPI 变量](#使用-beplaceholderapi-的变量)<br>建议直接使用%xxx%<br>除非同名时需要指定 papi 变量 |                                                                          %papi:xxx%                                                                           |
+    | %papi%            | %placeholder%<br>%placeholderapi%                                                               | [#PAPI 变量](#使用-beplaceholderapi-的变量)<br>建议直接使用%xxx%<br>除非同名时需要指定 papi 变量 |                                                                            %papi:xxx%                                                                             |
     | %server_received% | %server_receive%<br>%serverreceived%<br>%serverreceive%                                         | 服务器收到的总字节数                                                                             |
     | %server_sent%     | %server_send%<br>%serversent%<br>%serversend%                                                   | 服务器发送的总字节数                                                                             |
 
@@ -63,6 +63,10 @@ order: 7
     | %received%       | %receive%                                            | 每秒收到的字节数                                             |
     | %sent%           | %send%                                               | 每秒发送的字节数                                             |
     | %land%           |                                                      | 玩家当前领地                                                 | 类型%land:type%<br>所有者%land:owner%<br> 共享玩家%land:sharedplayers%<br>领地名称%land:displayname% <br>消息留言%land:message% <br>欢迎语%land:welcome%<br>%land:x1%<br>%land:y1%<br>%land:z1%<br>%land:x2%<br>%land:y2%<br>%land:z2%<br>长%land:dx%<br>宽%land:dy%<br>高%land:dz% |
+    | %biome%          |                                                      | 生物群系                                                     |
+    | %biome_name%     |                                                      | 生物群系名称（目前仅中文）                                   |
+    | %brightness%     |                                                      | 当前位置的亮度                                               |
+    | %temperature%    |                                                      | 当前位置的温度                                               |
 
 - ### 其他模块变量(需要开启指定模块)
 

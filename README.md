@@ -8,4 +8,6 @@ https://docs.mcpf.live/
 https://pflpdocs.pages.dev/
   <br>
 https://lazulikao.github.io/PFLPDocs
+  <br>
+https://d.mcpf.live/
 </details>

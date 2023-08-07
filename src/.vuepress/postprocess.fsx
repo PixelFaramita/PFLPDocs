@@ -12,7 +12,9 @@ let github = new GitHubClient(new ProductHeaderValue("octokit"))
 let latestRelease=
     async{
         let! releases = github.Repository.Release.GetAll("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
-        return releases.[0]
+        return releases
+                    |>Seq.sortBy(fun release->release.PublishedAt.Value)
+                    |>Seq.last
     }|>Async.RunSynchronously
 let downloadFile(url:string)(filename:string)=
         let downloadOpt = new Downloader.DownloadConfiguration(

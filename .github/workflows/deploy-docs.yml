@@ -32,6 +32,8 @@ jobs:
         run: |-
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
+      - name: PostProcess
+        run: dotnet fsi src/.vuepress/postprocess.fsx
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

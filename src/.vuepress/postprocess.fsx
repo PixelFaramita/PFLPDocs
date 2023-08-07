@@ -11,7 +11,8 @@ if Directory.Exists(dist)|>not then Directory.CreateDirectory(dist)|>ignore
 let github = new GitHubClient(new ProductHeaderValue("octokit"))
 let latestRelease=
     async{
-        return! github.Repository.Release.GetLatest("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
+        let! releases = github.Repository.Release.GetAll("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
+        return releases.[0]
     }|>Async.RunSynchronously
 let downloadFile(url:string)(filename:string)=
         let downloadOpt = new Downloader.DownloadConfiguration(

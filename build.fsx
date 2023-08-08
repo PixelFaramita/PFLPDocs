@@ -33,6 +33,7 @@ type ReleaseFile= {
         ``type``:string;
         size:int64;
         update:DateTimeOffset;
+        mutable path:string list;
 }
 type ReleaseInfo= {
         date:DateTimeOffset;
@@ -44,11 +45,14 @@ type ReleaseInfo= {
         url:string;
         files:ReleaseFile list;
 }
-let appendRelease dist content=
+let appendRelease dist releasePath path=
     async{
-    printfn "appendRelease %s" dist
-    printfn "data %s" content
-    if Directory.Exists(dist)|>not then Directory.CreateDirectory(dist)|>ignore
+    let release=Path.Combine(dist,releasePath|>List.toArray|>Path.Combine)
+    printfn "release: %s" release
+    let distPath=path|>List.toArray|>Path.Combine
+    let content=distPath|>File.ReadAllText
+    printfn "data: %s" content
+    if Directory.Exists(release)|>not then Directory.CreateDirectory(release)|>ignore
     let downloadFile(url:string)(filename:string)=
           async{
             let downloadOpt = new Downloader.DownloadConfiguration(
@@ -70,18 +74,25 @@ let appendRelease dist content=
                     printfn "%f KB/s : %d/%dKB" (e.AverageBytesPerSecondSpeed/(float)1024) size sizeall
                 )
             downloader.DownloadFileCompleted.Add (fun _->printfn "Download Success %s." filename)
-            do! downloader.DownloadFileTaskAsync(url, Path.Combine(dist,filename))|>Async.AwaitTask
-            printfn "%s -> %s" filename (Path.Combine(dist,filename))
+            let downloaded=Path.Combine(release,filename)
+            do! downloader.DownloadFileTaskAsync(url,downloaded)|>Async.AwaitTask
+            printfn "%s -> %s" filename downloaded
+            return downloaded
             }
-    let downloadUrsAndFileName=
-        JsonConvert.DeserializeObject<ReleaseInfo>(content).files
+    let data=
+        JsonConvert.DeserializeObject<ReleaseInfo>(content)
     do!
         [
-            for item in downloadUrsAndFileName do
-                downloadFile item.download item.name
-        ]
+            for item in data.files do
+                async{
+                    let! downloaded=downloadFile item.download item.name
+                    item.path<-releasePath@[downloaded]
+                }
+        ] 
         |>Async.Parallel
         |>Async.Ignore
+    let newContent=JsonConvert.SerializeObject(data)
+    File.WriteAllText(distPath,newContent)
     }
 let buildDocs()=
     async{
@@ -114,4 +125,4 @@ let dist = Path.Combine(baseDir, "src",".vuepress","dist")
 printfn "dist directory: %s" dist
 let mergeDist=dist|>mergeDistWithDist
 "download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist)
-appendRelease (Path.Combine(dist,"release")) (File.ReadAllText(Path.Combine(dist,"update","latest.json")))|>Async.RunSynchronously 
+appendRelease dist ["release"] ["update";"latest.json"]|>Async.RunSynchronously 

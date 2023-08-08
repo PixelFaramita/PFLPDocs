@@ -1,8 +1,6 @@
-open System.Diagnostics
-
-
 #r "nuget: Octokit, 7.1.0"
 #r "nuget: Downloader, 3.0.6"
+open System.Diagnostics
 open Octokit
 open System.IO
 open System
@@ -23,7 +21,7 @@ let run(cmd:string)=
         if isWindows then
             ProcessStartInfo("cmd",Arguments="/C "+cmd,WorkingDirectory=currentDir)
         else
-            ProcessStartInfo("sh",Arguments="-c "+cmd,WorkingDirectory=currentDir)
+            ProcessStartInfo("sh",Arguments= $"-c \"{cmd}\"",WorkingDirectory=currentDir)
             )
     do! p.WaitForExitAsync()|>Async.AwaitTask
     if p.ExitCode<>0 then failwithf "run %s failed" cmd
@@ -89,7 +87,7 @@ let buildDownloadPage()=
     }
 buildDocs()|>Async.RunSynchronously
 let dist = Path.Combine(baseDir, "src",".vuepress","dist")
-let mergeDist(source:string)=
+let mergeDist(source:string)(name:string)=
     let rec copyDir(source:string)(target:string)= 
         if target|>Directory.Exists|>not then target|>Directory.CreateDirectory|>ignore
         for file in source|>Directory.GetFiles do
@@ -100,10 +98,9 @@ let mergeDist(source:string)=
             let dirname=dir|>Path.GetFileName
             let targetDir=Path.Combine(target,dirname)
             copyDir dir targetDir
-    let folderName=source|>Path.GetFileName
-    copyDir source (Path.Combine(dist,folderName))
+    copyDir source (Path.Combine(dist,name))
 printfn "dist directory: %s" dist
-buildDownloadPage()|>Async.RunSynchronously|>mergeDist
+"download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist)
 Path.Combine(dist,"release")|>appendRelease|>Async.RunSynchronously
 
 

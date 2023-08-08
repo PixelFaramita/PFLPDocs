@@ -2,7 +2,6 @@ name: Deploy Docs Github Pages
 on:
   push:
     branches:
-      # 确保这是你正在使用的分支名称
       - 💥
 jobs:
   deploy-gh-pages:
@@ -20,8 +19,6 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
-      - name: Write Path
-        run: echo 'export const prefix = "/PFLPDocs/";' > src/.vuepress/path.ts
       - name: Install Dependencies
         run: npm ci
       - name: PreProcess
@@ -31,7 +28,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 这是文档部署到的分支名称
           branch: gh-pages
           folder: src/.vuepress/dist
           clean: true

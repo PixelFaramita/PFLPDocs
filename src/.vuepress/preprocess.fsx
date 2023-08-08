@@ -8,4 +8,10 @@ let processGiscus()=
     let result=data.Replace("""location.pathname.substring(1).replace(/\.\w+$/, "")""",
         """location.pathname.substring(1).replace(/\.\w+$/, "").replace(/\.\w+$/, "").replace(/^(PFLPDocs)\//g, "")""")
     File.WriteAllText(giscus,result)
+let processPath()=
+    let doTarget(args: string list)=
+        File.WriteAllText(Path.Combine(cd,args|>List.toArray|>Path.Combine),"""export const prefix = "/PFLPDocs/";""")
+    doTarget ["src";".vuepress";"path.ts"]
+    doTarget ["pages";"download";"path.js"]
 processGiscus()
+processPath()

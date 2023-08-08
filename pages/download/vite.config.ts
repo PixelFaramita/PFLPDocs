@@ -1,11 +1,9 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-
-// https://vitejs.dev/config/
+import { prefix } from './path'
 export default defineConfig({
-  base: '',
+  base: prefix + 'download/',
   plugins: [vue()],
   resolve: {
     alias: {

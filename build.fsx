@@ -2,7 +2,6 @@
 #r "nuget: Downloader, 3.0.6"
 #r "nuget: Newtonsoft.Json, 13.0.1"
 open System.Diagnostics
-//open Octokit
 open System.IO
 open System
 open Newtonsoft.Json
@@ -47,15 +46,9 @@ type ReleaseInfo= {
 }
 let appendRelease dist content=
     async{
+    printfn "appendRelease %s" dist
+    printfn "data %s" content
     if Directory.Exists(dist)|>not then Directory.CreateDirectory(dist)|>ignore
-    //let github = new GitHubClient(new ProductHeaderValue("octokit"))
-    //let! latestRelease=
-    //    async{
-    //        let! releases = github.Repository.Release.GetAll("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
-    //        return releases
-    //                    |>Seq.sortBy(fun release->release.PublishedAt.Value)
-    //                    |>Seq.last
-    //    }
     let downloadFile(url:string)(filename:string)=
           async{
             let downloadOpt = new Downloader.DownloadConfiguration(
@@ -104,9 +97,7 @@ let buildDownloadPage()=
     do! run"npm run build"
     return Path.Combine(currentDir,"dist")
     }
-buildDocs()|>Async.RunSynchronously
-let dist = Path.Combine(baseDir, "src",".vuepress","dist")
-let mergeDist(source:string)(name:string)=
+let mergeDistWithDist(source:string)(name:string)(dist:string)=
     let rec copyDir(source:string)(target:string)= 
         if target|>Directory.Exists|>not then target|>Directory.CreateDirectory|>ignore
         for file in source|>Directory.GetFiles do
@@ -118,6 +109,9 @@ let mergeDist(source:string)(name:string)=
             let targetDir=Path.Combine(target,dirname)
             copyDir dir targetDir
     copyDir source (Path.Combine(dist,name))
+buildDocs()|>Async.RunSynchronously
+let dist = Path.Combine(baseDir, "src",".vuepress","dist")
 printfn "dist directory: %s" dist
+let mergeDist=dist|>mergeDistWithDist
 "download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist)
 appendRelease (Path.Combine(dist,"release")) (File.ReadAllText(Path.Combine(dist,"update","latest.json")))|>Async.RunSynchronously 

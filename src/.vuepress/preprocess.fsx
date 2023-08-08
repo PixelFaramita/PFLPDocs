@@ -13,6 +13,6 @@ let processPath()=
         File.WriteAllText(Path.Combine(cd,args|>List.toArray|>Path.Combine),"""export const prefix = "/PFLPDocs/";""")
         printfn "processed %s" (args|>List.toArray|>Path.Combine)
     doTarget ["src";".vuepress";"path.ts"]
-    doTarget ["pages";"download";"path.js"]
+    doTarget ["pages";"download";"path.ts"]
 processGiscus()
 processPath()

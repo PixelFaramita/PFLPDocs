@@ -1,9 +1,11 @@
 #r "nuget: Octokit, 7.1.0"
 #r "nuget: Downloader, 3.0.6"
+#r "nuget: Newtonsoft.Json, 13.0.1"
 open System.Diagnostics
-open Octokit
+//open Octokit
 open System.IO
 open System
+open Newtonsoft.Json
 let baseDir = __SOURCE_DIRECTORY__
 let mutable currentDir = baseDir
 let isWindows=
@@ -26,22 +28,38 @@ let run(cmd:string)=
     do! p.WaitForExitAsync()|>Async.AwaitTask
     if p.ExitCode<>0 then failwithf "run %s failed" cmd
     }
-
-let appendRelease(dist)=
+type ReleaseFile= {
+        download:string;
+        name:string;
+        ``type``:string;
+        size:int64;
+        update:DateTimeOffset;
+}
+type ReleaseInfo= {
+        date:DateTimeOffset;
+        version:string;
+        versionNumber:int;
+        bds:string;
+        ll:string;
+        llnet:string;
+        url:string;
+        files:ReleaseFile list;
+}
+let appendRelease dist content=
     async{
     if Directory.Exists(dist)|>not then Directory.CreateDirectory(dist)|>ignore
-    let github = new GitHubClient(new ProductHeaderValue("octokit"))
-    let! latestRelease=
-        async{
-            let! releases = github.Repository.Release.GetAll("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
-            return releases
-                        |>Seq.sortBy(fun release->release.PublishedAt.Value)
-                        |>Seq.last
-        }
+    //let github = new GitHubClient(new ProductHeaderValue("octokit"))
+    //let! latestRelease=
+    //    async{
+    //        let! releases = github.Repository.Release.GetAll("LazuliKao","PixelFaramitaLuminousPolymerizationRes")|>Async.AwaitTask
+    //        return releases
+    //                    |>Seq.sortBy(fun release->release.PublishedAt.Value)
+    //                    |>Seq.last
+    //    }
     let downloadFile(url:string)(filename:string)=
           async{
             let downloadOpt = new Downloader.DownloadConfiguration(
-                                        ChunkCount = 8,
+                                        ChunkCount = 1,
                                         ParallelDownload = true) 
             let downloader = new Downloader.DownloadService(downloadOpt)
             downloader.DownloadStarted.Add (fun e->
@@ -58,15 +76,16 @@ let appendRelease(dist)=
                     lastTime<-now
                     printfn "%f KB/s : %d/%dKB" (e.AverageBytesPerSecondSpeed/(float)1024) size sizeall
                 )
-            downloader.DownloadFileCompleted.Add (fun _->printfn "Download Success")
-            do! downloader.DownloadFileTaskAsync(url, Path.Combine(dist,filename))|>Async.AwaitTask}
+            downloader.DownloadFileCompleted.Add (fun _->printfn "Download Success %s." filename)
+            do! downloader.DownloadFileTaskAsync(url, Path.Combine(dist,filename))|>Async.AwaitTask
+            printfn "%s -> %s" filename (Path.Combine(dist,filename))
+            }
     let downloadUrsAndFileName=
-        latestRelease.Assets
-        |>Seq.map(fun asset->asset.BrowserDownloadUrl,asset.Name)
+        JsonConvert.DeserializeObject<ReleaseInfo>(content).files
     do! 
         [
-            for (url,filename) in downloadUrsAndFileName do
-                downloadFile url filename
+            for item in downloadUrsAndFileName do
+                downloadFile item.download item.name
         ]
         |>Async.Parallel
         |>Async.Ignore
@@ -101,10 +120,4 @@ let mergeDist(source:string)(name:string)=
     copyDir source (Path.Combine(dist,name))
 printfn "dist directory: %s" dist
 "download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist)
-Path.Combine(dist,"release")|>appendRelease|>Async.RunSynchronously
-
-
-
-
-
-
+appendRelease (Path.Combine(dist,"release")) (File.ReadAllText(Path.Combine(dist,"update","latest.json")))|>Async.RunSynchronously 

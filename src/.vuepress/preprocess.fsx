@@ -11,6 +11,7 @@ let processGiscus()=
 let processPath()=
     let doTarget(args: string list)=
         File.WriteAllText(Path.Combine(cd,args|>List.toArray|>Path.Combine),"""export const prefix = "/PFLPDocs/";""")
+        printfn "processed %s" (args|>List.toArray|>Path.Combine)
     doTarget ["src";".vuepress";"path.ts"]
     doTarget ["pages";"download";"path.js"]
 processGiscus()

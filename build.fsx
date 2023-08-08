@@ -49,7 +49,7 @@ let appendRelease dist releasePath path=
     async{
     let release=Path.Combine(dist,releasePath|>List.toArray|>Path.Combine)
     printfn "release: %s" release
-    let distPath=path|>List.toArray|>Path.Combine
+    let distPath=dist::path|>List.toArray|>Path.Combine
     let content=distPath|>File.ReadAllText
     printfn "data: %s" content
     if Directory.Exists(release)|>not then Directory.CreateDirectory(release)|>ignore

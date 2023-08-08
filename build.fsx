@@ -82,7 +82,7 @@ let appendRelease dist content=
             }
     let downloadUrsAndFileName=
         JsonConvert.DeserializeObject<ReleaseInfo>(content).files
-    do! 
+    do!
         [
             for item in downloadUrsAndFileName do
                 downloadFile item.download item.name

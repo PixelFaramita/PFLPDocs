@@ -5,7 +5,11 @@ declare module '@vue/runtime-core' {
     ItAlert: (typeof import('equal-vue'))['Alert']
     ItAvatar: (typeof import('equal-vue'))['Avatar']
     ItAvatarGroup: (typeof import('equal-vue'))['AvatarGroup']
-    ItButton: (typeof import('equal-vue'))['Button']
+    ItButton:
+      | (typeof import('equal-vue'))['Button']
+      | {
+          variant: string
+        }
     ItButtonGroup: (typeof import('equal-vue'))['ButtonGroup']
     ItBadge: (typeof import('equal-vue'))['Badge']
     ItCheckbox: (typeof import('equal-vue'))['Checkbox']
@@ -17,7 +21,7 @@ declare module '@vue/runtime-core' {
     ItDropdown: (typeof import('equal-vue'))['Dropdown']
     ItInput: (typeof import('equal-vue'))['Input']
     ItSpinner: (typeof import('equal-vue'))['Spinner']
-    ItLoadingbar: (typeof import('equal-vue'))['Loadingbar']
+    ItLoadingBar: (typeof import('equal-vue'))['Loadingbar']
     ItModal: (typeof import('equal-vue'))['Modal']
     ItNumberInput: (typeof import('equal-vue'))['NumberInput']
     ItPopover: (typeof import('equal-vue'))['Popover']

@@ -35,10 +35,13 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://d.mcpf.live',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+      '/release': {
+        target: 'https://d.mcpf.live',
+        changeOrigin: true
+      },
+      '/update': {
+        target: 'https://d.mcpf.live',
+        changeOrigin: true
       }
     }
   }

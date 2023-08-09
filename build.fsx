@@ -125,4 +125,4 @@ let dist = Path.Combine(baseDir, "src",".vuepress","dist")
 printfn "dist directory: %s" dist
 let mergeDist=dist|>mergeDistWithDist
 "download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist) 
-appendRelease dist ["release"] ["update";"latest.json"]|>Async.RunSynchronously 
+appendRelease dist ["release"] ["update";"latest.json"]|>Async.RunSynchronously

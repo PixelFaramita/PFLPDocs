@@ -1,9 +1,9 @@
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+import DownloadPage from '@/pages/download.vue'
+</script>
 <template>
   <main>
-    <it-button>Button</it-button>
+    <download-page />
   </main>
 </template>
-
 <style scoped></style>

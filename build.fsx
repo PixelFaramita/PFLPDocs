@@ -47,7 +47,7 @@ type ReleaseInfo= {
 }
 let appendRelease dist releasePath path=
     async{
-    let release=Path.Combine(dist,releasePath|>List.toArray|>Path.Combine)
+    let release=dist::releasePath|>List.toArray|>Path.Combine
     printfn "release: %s" release
     let distPath=dist::path|>List.toArray|>Path.Combine
     let content=distPath|>File.ReadAllText
@@ -77,7 +77,7 @@ let appendRelease dist releasePath path=
             let downloaded=Path.Combine(release,filename)
             do! downloader.DownloadFileTaskAsync(url,downloaded)|>Async.AwaitTask
             printfn "%s -> %s" filename downloaded
-            return downloaded
+            return filename
             }
     let data=
         JsonConvert.DeserializeObject<ReleaseInfo>(content)
@@ -108,7 +108,7 @@ let buildDownloadPage()=
     do! run"npm run build"
     return Path.Combine(currentDir,"dist")
     }
-let mergeDistWithDist(source:string)(name:string)(dist:string)=
+let mergeDistWithDist(dist:string)(source:string)(name:string)=
     let rec copyDir(source:string)(target:string)= 
         if target|>Directory.Exists|>not then target|>Directory.CreateDirectory|>ignore
         for file in source|>Directory.GetFiles do
@@ -124,5 +124,5 @@ buildDocs()|>Async.RunSynchronously
 let dist = Path.Combine(baseDir, "src",".vuepress","dist")
 printfn "dist directory: %s" dist
 let mergeDist=dist|>mergeDistWithDist
-"download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist)
+"download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist) 
 appendRelease dist ["release"] ["update";"latest.json"]|>Async.RunSynchronously 

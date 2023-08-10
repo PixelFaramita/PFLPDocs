@@ -1,7 +1,9 @@
 <script setup lang="ts">
-    import DownloadPage from './views/DownloadPage.vue';
+import DownloadPage from '@/pages/download.vue'
 </script>
-
 <template>
-    <DownloadPage />
+  <main>
+    <download-page />
+  </main>
 </template>
+<style scoped></style>

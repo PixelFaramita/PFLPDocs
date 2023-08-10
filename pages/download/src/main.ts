@@ -1,17 +1,8 @@
-import './assets/main.css';
-
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-import ElementPlus from 'element-plus';
-import 'element-plus/dist/index.css';
-
-import App from './App.vue';
-import router from './router';
-
-const app = createApp(App);
-
-app.use(createPinia());
-app.use(router);
-app.use(ElementPlus);
-
-app.mount('#app');
+import './assets/main.css'
+import { createApp } from 'vue'
+import App from './App.vue'
+import Equal from 'equal-vue'
+import Config from 'equal-vue/dist/theme/full' // or light / dark theme
+const app = createApp(App)
+Equal.install(app, Config)
+app.mount('#app')

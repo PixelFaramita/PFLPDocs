@@ -129,7 +129,7 @@
                     this.windowHeight = document.documentElement.clientHeight; // 高
                     this.windowWidth = document.documentElement.clientWidth; // 宽
                 })();
-            }
+            };
         },
     };
 

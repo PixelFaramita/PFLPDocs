@@ -25,5 +25,8 @@ export default defineConfig({
         changeOrigin: true
       }
     }
-  }
+  },
+  build: {
+    target: 'esnext', // 或者其他支持顶层 await 的目标版本
+  },
 })

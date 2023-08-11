@@ -139,7 +139,7 @@
 <template>
     <div v-if="ifShowPrograss">
         <el-progress class="elp" width="500" type="circle" :percentage="percentage" :color="colors" stroke-width="15" striped="true" striped-flow="true">
-            <template>
+            <template #default>
                 <span class="percentage-label">正在获取数据信息</span>
             </template>
         </el-progress>

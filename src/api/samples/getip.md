@@ -1,5 +1,5 @@
 ---
-title: 扩展WebUI功能
+title: 修改获取IP归属地接口
 icon: laptop-code
 order: 4
 ---
@@ -32,9 +32,4 @@ mc.listen("onServerStarted", () => {
   throw new Error("测试");
 });
 
-mc.listen("onServerStarted", () => {
-  $pf.listen($pf.EventKey.webUIGetName, (xuid, name) => {
-    return `<a href="https://baidu.com">${name}</a>`; //写html以显示玩家名称
-  });
-});
 ```

@@ -37,6 +37,8 @@ type ReleaseFile= {
 }
 type ReleaseInfo= {
         date:DateTimeOffset;
+        title:string;
+        content:string;
         version:string;
         versionNumber:int;
         bds:string;

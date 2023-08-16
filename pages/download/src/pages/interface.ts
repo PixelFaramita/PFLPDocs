@@ -1,4 +1,4 @@
-export interface LatestVersionInfo {
+export interface VersionInfo {
   date: string
   version: string
   versionNumber: number
@@ -17,5 +17,5 @@ export interface File {
   type: string
   size: number
   update: string
-  path: string[]
+  path: string[] | undefined
 }

@@ -23,9 +23,9 @@ defineProps<{
 }>()
 const loadingVariantId = ref(0)
 const loadingId = setInterval(() => {
-  loadingVariantId.value = (loadingVariantId.value + 1) % 3
+  loadingVariantId.value = (loadingVariantId.value + 1) % 4
   //console.debug('active')
-}, 100)
+}, 150)
 const loadingVariant = computed(() => {
   switch (loadingVariantId.value) {
     case 0:

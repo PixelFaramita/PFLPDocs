@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DownloadPage from '@/pages/download.vue'
+import DownloadPage from '@/pages/DownloadPage.vue'
 </script>
 <template>
   <main>

@@ -72,7 +72,6 @@ const filter = computed(() => {
 })
 const listVisable = computed(() => {
   if (!list.value) return []
-  console.log(filter.value.version)
   return list.value.filter((item) => {
     if (filter.value.version && item.bds !== filter.value.version.key) return false
     if (filter.value.str) {

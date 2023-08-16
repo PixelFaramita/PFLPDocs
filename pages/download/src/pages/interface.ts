@@ -4,6 +4,8 @@ export interface LatestVersionInfo {
   versionNumber: number
   bds: string
   ll: string
+  title: string
+  content: string
   llnet: string
   url: string
   files: File[]

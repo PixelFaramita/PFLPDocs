@@ -2,7 +2,11 @@ import '@vue/runtime-core'
 export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ItAlert: (typeof import('equal-vue'))['Alert']
+    ItAlert:
+      | (typeof import('equal-vue'))['Alert']
+      | {
+          variant: string
+        }
     ItAvatar: (typeof import('equal-vue'))['Avatar']
     ItAvatarGroup: (typeof import('equal-vue'))['AvatarGroup']
     ItButton:

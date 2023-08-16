@@ -42,24 +42,26 @@ onMounted(() => {
 </script>
 <template>
   <it-loading-bar ref="globalLoading" global teleport="head" />
-  <div v-if="latest">
-    <it-tabs
-      :vertical="isWideScreen"
-      :class="{
-        'h-28': isWideScreen
-      }"
-    >
-      <it-tab title="最新版本">
-        <div class="grid place-items-center mt-10">
-          <download-item :item="latest"> </download-item>
-        </div>
-      </it-tab>
-      <it-tab title="历史版本">
-        <hist-version-page />
-      </it-tab>
-    </it-tabs>
+  <div>
+    <div v-if="latest">
+      <it-tabs
+        :vertical="isWideScreen"
+        :class="{
+          'h-28': isWideScreen
+        }"
+      >
+        <it-tab title="最新版本">
+          <div class="grid place-items-center mt-10">
+            <download-item :item="latest"> </download-item>
+          </div>
+        </it-tab>
+        <it-tab title="历史版本">
+          <hist-version-page />
+        </it-tab>
+      </it-tabs>
+    </div>
+    <loading-page v-else message="正在获取最新版本" />
   </div>
-  <loading-page v-else message="正在获取最新版本" />
 </template>
 <style>
 .btn-explode::before {

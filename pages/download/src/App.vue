@@ -8,7 +8,7 @@ import DownloadPage from '@/pages/DownloadPage.vue'
 </template>
 <style scoped>
 .main::after {
-  background-color: black;
+  background-color: white;
   content: '';
   position: fixed;
   top: 0;
@@ -16,5 +16,11 @@ import DownloadPage from '@/pages/DownloadPage.vue'
   width: 100vw;
   height: 100vh;
   z-index: -10;
+}
+/**check if dark mode */
+@media (prefers-color-scheme: dark) {
+  .main::after {
+    background-color: black;
+  }
 }
 </style>

@@ -1,7 +1,17 @@
 {
+    "$schema": "https://json.schemastore.org/staticwebapp.config.json",
     "responseOverrides": {
         "404": {
             "rewrite": "/404.html"
         }
-    }
+    },
+    "trailingSlash": "never",
+    "routes": [
+        {
+            "route": "/update/*",
+            "headers": {
+                "cache-control": "no-cache"
+            }
+        }
+    ]
 }

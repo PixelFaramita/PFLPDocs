@@ -2,7 +2,7 @@
   <h1 class="text-2xl">v{{ item.version }}</h1>
   <div class="grid">
     <span>
-      Commit：{{ item.content }} <br />
+      <span v-if="item.title"> Commit：{{ item.content }} <br /> </span>
       发布时间：{{ formatDate(item.date) }} <br />
       兼容信息：<br />
       <span class="ml-4"> BDS：{{ item.bds }} <br /> </span>
@@ -13,7 +13,7 @@
     <it-button
       class="m-1"
       :class="{
-        'btn-explode': file.name.endsWith('.zip')
+        'btn-explode': file.path && file.name.endsWith('.zip')
       }"
       v-for="file in item?.files"
       outlined

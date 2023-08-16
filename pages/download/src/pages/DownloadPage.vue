@@ -17,7 +17,7 @@ onMounted(async () => {
     }, 1000)
   })
   globalLoading.value?.setProgress(50)
-  latest.value = reactive(
+  latest.value = (
     await axios({
       method: 'get',
       url: '/update/latest.json',

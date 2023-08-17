@@ -5,6 +5,7 @@ open System.Diagnostics
 open System.IO
 open System
 open Newtonsoft.Json
+open Newtonsoft.Json.Linq
 let baseDir = __SOURCE_DIRECTORY__
 let mutable currentDir = baseDir
 let isWindows=
@@ -47,6 +48,12 @@ type ReleaseInfo= {
         url:string;
         files:ReleaseFile list;
 }
+let generateLatestFromAll dist versionsPath latestPath=
+    let from=dist::versionsPath|>List.toArray|>Path.Combine
+    let toPath=dist::latestPath|>List.toArray|>Path.Combine
+    let jobj=JObject.Parse(File.ReadAllText(from))
+    let latest=jobj["latest"]
+    File.WriteAllText(toPath,latest.ToString())
 let appendRelease dist releasePath path=
     async{
     let release=dist::releasePath|>List.toArray|>Path.Combine
@@ -127,4 +134,5 @@ let dist = Path.Combine(baseDir, "src",".vuepress","dist")
 printfn "dist directory: %s" dist
 let mergeDist=dist|>mergeDistWithDist
 "download"|>(buildDownloadPage()|>Async.RunSynchronously|>mergeDist) 
+generateLatestFromAll dist ["update";"versions.json"] ["update";"latest.json"]
 appendRelease dist ["release"] ["update";"latest.json"]|>Async.RunSynchronously

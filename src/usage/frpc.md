@@ -51,7 +51,7 @@ remote_port = 11451
 ![SakuraFrp 下载配置](../../images/frp/natfrp2.png)
 
 - ##### 修改配置文件
-  - 将下载到的`frpc_xxx.ini`放到合适目录，如：`[BDS]\plugins\PixelFaramitaLuminousPolymerization\frpc_xxx.ini`
+  - 将下载到的`frpc_xxx.ini`放到合适目录，如：`[BDS]\plugins\PXBANALuminousPolymerization\frpc_xxx.ini`
   - 在 pflp 的 `config.json`对应项`FrpConfigs`添加对应配置，如：`"~\\frpc_xxx.ini"`
   - 控制台输入`pflp reload`重载，即可运行
 

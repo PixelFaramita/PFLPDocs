@@ -19,7 +19,7 @@ actions:
   - text: 用方
     link: ./usage/
   - text: 下载
-    link: ./download/
+    link: https://d.mcpf.live/download/
     type: primary
 highlights:
   - header: 必备前置

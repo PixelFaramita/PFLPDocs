@@ -18,6 +18,9 @@ actions:
     link: ./guide/
   - text: 用方
     link: ./usage/
+  - text: 下载
+    link: ./download/
+    type: primary
 highlights:
   - header: 必备前置
     image: /assets/image/box.svg

@@ -1,6 +1,6 @@
 ---
 title: 更新日志
-icon: laptop-code
+icon: calendar-plus
 order: 1
 ---
 

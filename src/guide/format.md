@@ -1,6 +1,6 @@
 ---
 title: 变量与格式化选项
-icon: laptop-code
+icon: expand
 order: 7
 ---
 

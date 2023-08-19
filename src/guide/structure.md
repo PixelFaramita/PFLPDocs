@@ -2,7 +2,7 @@
 title: 文件结构
 index: true
 order: 1
-icon: laptop-code
+icon: folder-tree
 ---
 
 ## 插件目录的文件结构

@@ -1,7 +1,7 @@
 ---
 title: 关于
 index: true
-icon: laptop-code
+icon: circle-info
 order: 7
 ---
 

@@ -8,7 +8,7 @@ export default hopeTheme({
     url: "https://github.com/LazuliKao",
   },
   favicon: "/favicon.ico",
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "fontawesome",
   logo: "/logoTitle.png",
   repo: "PixelFaramita/PFLPDocs",
   docsRepo: "PixelFaramita/PFLPDocs",

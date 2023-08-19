@@ -1,7 +1,7 @@
 ---
 title: 导引
 index: true
-icon: laptop-code
+icon: compass
 order: 2
 ---
 

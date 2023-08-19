@@ -1,6 +1,6 @@
 ---
 title: 示例
-icon: laptop-code
+icon: code
 order: 5
 ---
 

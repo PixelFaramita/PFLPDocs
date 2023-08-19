@@ -1,6 +1,6 @@
 ---
 title: 插件配置
-icon: laptop-code
+icon: sliders
 order: 2
 ---
 

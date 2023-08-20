@@ -1,28 +1,28 @@
 {
   "latest": {
-    "date": "2023-08-20T22:41:33.72743+08:00",
-    "title": "Update ClrLandPriceInfoProxy.cs",
-    "content": "Update ClrLandPriceInfoProxy.cs\n",
-    "version": "0.1.2168",
-    "versionNumber": 2168,
+    "date": "2023-08-20T22:55:26.8305659+08:00",
+    "title": "sync",
+    "content": "sync\n",
+    "version": "0.1.2169",
+    "versionNumber": 2169,
     "bds": "1.20.14",
     "ll": "2.15.0",
     "llnet": "2.15.0",
-    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2168",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2169",
     "files": [
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2168/LLNet_with_PFLP_Beta_v0.1.2168.zip",
-        "name": "LLNet_with_PFLP_Beta_v0.1.2168.zip",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2169/LLNet_with_PFLP_Beta_v0.1.2169.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2169.zip",
         "type": "application/zip",
-        "size": 12714306,
-        "update": "2023-08-20T14:41:33+00:00"
+        "size": 12715198,
+        "update": "2023-08-20T14:55:26+00:00"
       },
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2168/PFLP_Beta_v0.1.2168.dll",
-        "name": "PFLP_Beta_v0.1.2168.dll",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2169/PFLP_Beta_v0.1.2169.dll",
+        "name": "PFLP_Beta_v0.1.2169.dll",
         "type": "application/octet-stream",
-        "size": 20648464,
-        "update": "2023-08-20T14:41:30+00:00"
+        "size": 20650512,
+        "update": "2023-08-20T14:55:18+00:00"
       }
     ]
   },
@@ -1257,6 +1257,33 @@
         "type": "application/octet-stream",
         "size": 20648464,
         "update": "2023-08-20T21:06:20+08:00"
+      }
+    ]
+  },
+  "0.1.2168": {
+    "date": "2023-08-20T22:41:33.72743+08:00",
+    "title": "Update ClrLandPriceInfoProxy.cs",
+    "content": "Update ClrLandPriceInfoProxy.cs\n",
+    "version": "0.1.2168",
+    "versionNumber": 2168,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2168",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2168/LLNet_with_PFLP_Beta_v0.1.2168.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2168.zip",
+        "type": "application/zip",
+        "size": 12714306,
+        "update": "2023-08-20T22:41:33+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2168/PFLP_Beta_v0.1.2168.dll",
+        "name": "PFLP_Beta_v0.1.2168.dll",
+        "type": "application/octet-stream",
+        "size": 20648464,
+        "update": "2023-08-20T22:41:30+08:00"
       }
     ]
   }

@@ -1,3 +1,7 @@
+---
+title: LandCalcPrice
+---
+
 # LandCalcPrice
 ## 计算领地价格
 | 名称 | 类型 | 描述 |

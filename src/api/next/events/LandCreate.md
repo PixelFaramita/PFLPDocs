@@ -1,3 +1,7 @@
+---
+title: LandCreate
+---
+
 # LandCreate
 ## 创建领地
 | 名称 | 类型 | 描述 |

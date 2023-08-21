@@ -1,3 +1,7 @@
+---
+title: LandType
+---
+
 # LandType
 ## 领地类型
 | 名称 | 描述 |

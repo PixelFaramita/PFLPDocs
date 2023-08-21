@@ -4,7 +4,7 @@ title: ReadOnlyVec3
 
 [[toc]]
 
-- 坐标
+- 坐标(只读)
 
 # 属性
 ## X

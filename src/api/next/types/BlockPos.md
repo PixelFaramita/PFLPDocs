@@ -4,7 +4,7 @@ title: BlockPos
 
 [[toc]]
 
-- 坐标
+- 方块坐标
 
 # 属性
 ## X

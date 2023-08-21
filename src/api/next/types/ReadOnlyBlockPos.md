@@ -4,7 +4,7 @@ title: ReadOnlyBlockPos
 
 [[toc]]
 
-- 坐标
+- 方块坐标(只读)
 
 # 属性
 ## X

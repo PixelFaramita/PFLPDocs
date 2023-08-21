@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./nav/index";
 export default hopeTheme({
   hostname: "https://docs.mcpf.live",
-  sidebar: "structure",
+  sidebar: "heading",
   author: {
     name: "LazuliKao",
     url: "https://github.com/LazuliKao",

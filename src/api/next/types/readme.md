@@ -1,6 +1,8 @@
 ---
 title: 类型
 index: true
+icon: compass
+order: 1
 ---
 
 - [LandApi](./LandApi.md)
@@ -27,4 +29,3 @@ index: true
   - 领地配置信息
 - [LandPriceInfo](./LandPriceInfo.md)
   - 领地价格信息
-    

@@ -4,6 +4,7 @@ import theme from "./theme";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 export default defineUserConfig({
   base: prefix,
+  shouldPrefetch: false,
   source: "docs",
   locales: {
     "/": {

@@ -1,15 +1,16 @@
 ---
 title: 事件
 index: true
-icon: compass
+icon: circle-nodes
 order: 3
 ---
 
 - [TpaStart](./TpaStart.md)
-  - Tpa 传送执行前
+  - Tpa传送执行前
 - [OutOfWorldLimit](./OutOfWorldLimit.md)
   - 超出世界边界
 - [LandCalcPrice](./LandCalcPrice.md)
   - 计算领地价格
 - [LandCreate](./LandCreate.md)
   - 创建领地
+    

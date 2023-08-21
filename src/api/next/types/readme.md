@@ -1,7 +1,7 @@
 ---
 title: 类型
 index: true
-icon: compass
+icon: box
 order: 1
 ---
 
@@ -29,3 +29,4 @@ order: 1
   - 领地配置信息
 - [LandPriceInfo](./LandPriceInfo.md)
   - 领地价格信息
+    

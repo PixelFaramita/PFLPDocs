@@ -1,10 +1,6 @@
 ---
 title: 枚举
-index: true
-icon: note
+index: false
+icon: notes
 order: 2
 ---
-
-- [LandType](./LandType.md)
-  - 领地类型
-    

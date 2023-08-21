@@ -1,6 +1,6 @@
 ---
 title: 数据迁移
-icon: laptop-code
+icon: file-import
 order: 5
 ---
 
@@ -19,7 +19,8 @@ order: 5
 - 其他模块暂无迁移适配
 
 ## 从 TMEsstntial 迁移数据到本插件
-- 由于 TMEssential 的home和warp数据文件与PFEssentials相同，故放置到`plugins\PFEssentials\data`即可自动导入
+
+- 由于 TMEssential 的 home 和 warp 数据文件与 PFEssentials 相同，故放置到`plugins\PFEssentials\data`即可自动导入
 - ### Home
   - 文件放到`plugins\PFEssentials\data\homelist.json`
 - ### Warp

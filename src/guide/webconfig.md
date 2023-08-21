@@ -1,6 +1,6 @@
 ---
 title: 使用网页配置插件
-icon: laptop-code
+icon: arrow-pointer
 order: 6
 ---
 

@@ -14,7 +14,7 @@ order: 4
 
 ### 修改配置文件以及开启需要的模块
 
-- 配置文件位于：`plugins\PixelFaramitaLuminousPolymerization\config.json`
+- 配置文件位于：`plugins\PXBANALuminousPolymerization\config.json`
 - 请使用专业的编辑工具编辑（而不是祭祀本）
 
 - 打开文件把看起来中意的模块开起来

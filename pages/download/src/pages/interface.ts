@@ -1,9 +1,11 @@
-export interface LatestVersionInfo {
+export interface VersionInfo {
   date: string
   version: string
   versionNumber: number
   bds: string
   ll: string
+  title: string
+  content: string
   llnet: string
   url: string
   files: File[]
@@ -15,5 +17,5 @@ export interface File {
   type: string
   size: number
   update: string
-  path: string[]
+  path: string[] | undefined
 }

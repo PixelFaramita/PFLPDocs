@@ -1,6 +1,6 @@
 ---
 title: 文档使用
-icon: laptop-code
+icon: book-bookmark
 order: 0
 ---
 

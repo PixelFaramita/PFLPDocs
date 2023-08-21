@@ -2,12 +2,12 @@
 title: 文件结构
 index: true
 order: 1
-icon: laptop-code
+icon: folder-tree
 ---
 
 ## 插件目录的文件结构
 
-- 插件目录位于`[服务端目录]\plugins\PixelFaramitaLuminousPolymerization\`目录下
+- 插件目录位于`[服务端目录]\plugins\PXBANALuminousPolymerization\`目录下
 - 插件目录下的`config.json`文件是插件的主配置文件
 
 ### 文件列表

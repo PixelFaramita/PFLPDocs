@@ -15,8 +15,8 @@ order: 65
 ## 手动加载
 
 - 解压到指定目录即可自动加载
-- `plugins\PixelFaramitaLuminousPolymerization\pack\customize\resource_packs\[xxx]\manifest.json`
-- `plugins\PixelFaramitaLuminousPolymerization\pack\customize\behavior_packs\[xxx]\manifest.json`
+- `plugins\PXBANALuminousPolymerization\pack\customize\resource_packs\[xxx]\manifest.json`
+- `plugins\PXBANALuminousPolymerization\pack\customize\behavior_packs\[xxx]\manifest.json`
   > _文件夹直接放入即可加载，不会污染地图目录和服务端目录的行为包/资源包文件夹_
 
 ## 自动加载
@@ -30,8 +30,8 @@ order: 65
 ## 快速加载
 
 - 快速加载 结构 和`.mcfunction`文件
-- `plugins\PixelFaramitaLuminousPolymerization\pack\functions`
-- `plugins\PixelFaramitaLuminousPolymerization\pack\structures`
+- `plugins\PXBANALuminousPolymerization\pack\functions`
+- `plugins\PXBANALuminousPolymerization\pack\structures`
 - 支持`/reload`命令重载，不过受限于`/reload`命令的限制，只能重载开服时已存在的文件
   > _文件直接放入即可自动导入，不会污染地图目录和服务端目录的行为包文件夹_
 

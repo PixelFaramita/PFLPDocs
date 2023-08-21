@@ -3,9 +3,9 @@ home: true
 icon: home
 title: 主页
 sidebar: heading
-# heroImage: /logo.svg
-# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+heroImage: /logo.png
+bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Luminous Polymerization
@@ -18,9 +18,12 @@ actions:
     link: ./guide/
   - text: 用方
     link: ./usage/
+  - text: 下载
+    link: https://d.mcpf.live/download/
+    type: primary
 highlights:
   - header: 必备前置
-    # image: /assets/image/box.svg
+    image: /assets/image/box.svg
     # bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
     # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:

@@ -1,6 +1,6 @@
 ---
 title: 插件兼容性
-icon: laptop-code
+icon: puzzle-piece
 order: 4
 ---
 

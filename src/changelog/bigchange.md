@@ -1,6 +1,6 @@
 ---
 title: 插件重大变更
-icon: laptop-code
+icon: explosion
 order: 1
 ---
 

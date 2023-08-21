@@ -1,6 +1,6 @@
 ---
 title: 插件配置
-icon: laptop-code
+icon: sliders
 order: 2
 ---
 
@@ -9,7 +9,7 @@ order: 2
 ### 配置文件
 
 - 配置文件使用`json`格式
-- 配置文件位于`[服务端目录]\plugins\PixelFaramitaLuminousPolymerization\config.json`
+- 配置文件位于`[服务端目录]\plugins\PXBANALuminousPolymerization\config.json`
 - 请使用专业的编辑工具编辑（而不是祭祀本），如[`Visual Studio Code`](https://code.visualstudio.com/)
 
 ### 配置文件基本结构

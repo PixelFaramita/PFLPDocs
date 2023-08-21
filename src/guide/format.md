@@ -1,6 +1,6 @@
 ---
 title: 变量与格式化选项
-icon: laptop-code
+icon: expand
 order: 7
 ---
 
@@ -107,4 +107,4 @@ order: 7
 
 ## 增加自定义变量
 
-参考[接口 - 注册变量](../api/format.md)
+参考[接口 - 注册变量](../api/samples/format.md)

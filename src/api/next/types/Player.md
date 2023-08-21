@@ -2,9 +2,9 @@
 title: Player
 ---
 
-[[toc]]
+<h1>玩家对象</h1>
 
-- 玩家对象
+[[toc]]
 
 # 属性
 ## Xuid

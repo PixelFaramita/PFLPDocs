@@ -2,9 +2,9 @@
 title: LandConfig
 ---
 
-[[toc]]
+<h1>领地配置信息</h1>
 
-- 领地配置信息
+[[toc]]
 
 # 属性
 ## Price2d

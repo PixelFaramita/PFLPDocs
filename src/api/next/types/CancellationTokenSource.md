@@ -2,9 +2,9 @@
 title: CancellationTokenSource
 ---
 
-[[toc]]
+<h1>取消令牌</h1>
 
-- 取消令牌
+[[toc]]
 
 # 函数对象
   - (*作为函数对象直接调用*)

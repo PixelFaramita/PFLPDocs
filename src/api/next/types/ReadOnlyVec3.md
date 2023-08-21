@@ -2,9 +2,9 @@
 title: ReadOnlyVec3
 ---
 
-[[toc]]
+<h1>坐标(只读)</h1>
 
-- 坐标(只读)
+[[toc]]
 
 # 属性
 ## X

@@ -2,9 +2,9 @@
 title: BlockPos
 ---
 
-[[toc]]
+<h1>方块坐标</h1>
 
-- 方块坐标
+[[toc]]
 
 # 属性
 ## X

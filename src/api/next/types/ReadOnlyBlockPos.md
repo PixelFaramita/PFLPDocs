@@ -2,9 +2,9 @@
 title: ReadOnlyBlockPos
 ---
 
-[[toc]]
+<h1>方块坐标(只读)</h1>
 
-- 方块坐标(只读)
+[[toc]]
 
 # 属性
 ## X

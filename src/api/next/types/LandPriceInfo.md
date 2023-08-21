@@ -2,9 +2,9 @@
 title: LandPriceInfo
 ---
 
-[[toc]]
+<h1>领地价格信息</h1>
 
-- 领地价格信息
+[[toc]]
 
 # 属性
 ## OriginalPrice

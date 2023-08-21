@@ -2,9 +2,9 @@
 title: LandInfo
 ---
 
-[[toc]]
+<h1>领地信息</h1>
 
-- 领地信息
+[[toc]]
 
 # 属性
 ## Start

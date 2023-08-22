@@ -2,7 +2,7 @@
 title: LandPriceInfo
 ---
 
-<h1>领地价格信息</h1>
+# 领地价格信息
 
 [[toc]]
 

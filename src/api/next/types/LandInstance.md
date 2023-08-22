@@ -2,7 +2,7 @@
 title: LandInstance
 ---
 
-<h1>领地实例</h1>
+# 领地实例
 
 [[toc]]
 

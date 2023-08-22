@@ -2,7 +2,7 @@
 title: LandPlayerPermissionSettings
 ---
 
-<h1>玩家的领地权限内容</h1>
+# 玩家的领地权限内容
 
 [[toc]]
 

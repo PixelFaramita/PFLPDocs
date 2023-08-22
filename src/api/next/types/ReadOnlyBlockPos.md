@@ -2,7 +2,7 @@
 title: ReadOnlyBlockPos
 ---
 
-<h1>方块坐标(只读)</h1>
+# 方块坐标(只读)
 
 [[toc]]
 

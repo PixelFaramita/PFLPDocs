@@ -2,7 +2,7 @@
 title: LandConfig
 ---
 
-<h1>领地配置信息</h1>
+# 领地配置信息
 
 [[toc]]
 

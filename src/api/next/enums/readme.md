@@ -1,6 +1,6 @@
 ---
 title: 枚举
 index: false
-icon: notes
+icon: cubes
 order: 2
 ---

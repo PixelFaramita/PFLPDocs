@@ -2,7 +2,7 @@
 title: BlockPos
 ---
 
-<h1>方块坐标</h1>
+# 方块坐标
 
 [[toc]]
 

@@ -1,6 +1,7 @@
 ---
 title: 全新API
 index: true
+icon: poop
 ---
 
 ## 介绍

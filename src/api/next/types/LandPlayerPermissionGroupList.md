@@ -2,7 +2,7 @@
 title: LandPlayerPermissionGroupList
 ---
 
-<h1>玩家的领地权限组列表</h1>
+# 玩家的领地权限组列表
 
 [[toc]]
 

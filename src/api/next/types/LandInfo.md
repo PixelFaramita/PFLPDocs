@@ -2,7 +2,7 @@
 title: LandInfo
 ---
 
-<h1>领地信息</h1>
+# 领地信息
 
 [[toc]]
 

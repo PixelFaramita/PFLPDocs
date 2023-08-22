@@ -5,7 +5,7 @@ title: ReadOnlyVec3
 # 坐标(只读)
 
 > ## 1 处引用
-> - [OutOfWorldLimitInfo](../types/OutOfWorldLimitInfo.md#PreviousPosition) 属性
+> - [OutOfWorldLimitInfo::PreviousPosition](../types/OutOfWorldLimitInfo.md#PreviousPosition) 属性
 ---
 
 [[toc]]

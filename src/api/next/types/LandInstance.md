@@ -5,7 +5,7 @@ title: LandInstance
 # 领地实例
 
 > ## 1 处引用
-> - [PlayerLand](../types/PlayerLand.md#OwnedLands) 属性
+> - [PlayerLand::OwnedLands](../types/PlayerLand.md#OwnedLands) 属性
 ---
 
 [[toc]]

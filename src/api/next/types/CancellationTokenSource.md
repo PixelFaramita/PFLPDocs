@@ -4,9 +4,10 @@ title: CancellationTokenSource
 
 # 取消令牌
 
+无引用
+
 [[toc]]
 
-无引用
 # 函数对象
   - (*作为函数对象直接调用*)
   - ### 取消任务

@@ -4,11 +4,12 @@ title: LandConfig
 
 # 领地配置信息
 
-[[toc]]
-
 > ## 1 处引用
 > - [LandPriceInfo](../types/LandPriceInfo.md#LandConfig) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## Price2d
 - ### 2d领地价格

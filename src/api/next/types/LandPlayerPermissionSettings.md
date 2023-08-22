@@ -4,11 +4,12 @@ title: LandPlayerPermissionSettings
 
 # 玩家的领地权限内容
 
-[[toc]]
-
 > ## 1 处引用
 > - [LandPlayerPermissionGroup](../types/LandPlayerPermissionGroup.md#Permissions) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## UseItemOn
 - ### 使用物品

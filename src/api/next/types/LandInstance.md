@@ -4,11 +4,12 @@ title: LandInstance
 
 # 领地实例
 
-[[toc]]
-
 > ## 1 处引用
 > - [PlayerLand](../types/PlayerLand.md#OwnedLands) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## Info
 - ### 领地信息

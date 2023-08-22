@@ -4,14 +4,15 @@ title: ReadOnlyBlockPos
 
 # 方块坐标(只读)
 
-[[toc]]
-
 > ## 4 处引用
 > - [LandInfo](../types/LandInfo.md#End) 属性
 > - [LandInfo](../types/LandInfo.md#Start) 属性
 > - [LandPriceInfo](../types/LandPriceInfo.md#End) 属性
 > - [LandPriceInfo](../types/LandPriceInfo.md#Start) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## X
 - ### x坐标

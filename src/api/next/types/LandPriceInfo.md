@@ -4,11 +4,12 @@ title: LandPriceInfo
 
 # 领地价格信息
 
-[[toc]]
-
 > ## 1 处引用
 > - [LandCalcPrice 事件](../events/LandCalcPrice.md) 参数 landPrice
 ---
+
+[[toc]]
+
 # 属性
 ## OriginalPrice
 - ### 原价

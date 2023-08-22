@@ -4,14 +4,15 @@ title: LandPlayerPermissionGroup
 
 # 玩家的领地权限组
 
-[[toc]]
-
 > ## 4 处引用
 > - [LandPlayerPermissionGroupList](../types/LandPlayerPermissionGroupList.md#Custom) 属性
 > - [LandPlayerPermissionGroupList](../types/LandPlayerPermissionGroupList.md#DefaultPublic) 属性
 > - [LandPlayerPermissionGroupList](../types/LandPlayerPermissionGroupList.md#DefaultShared) 属性
 > - [LandPlayerPermissionGroup](../types/LandPlayerPermissionGroup.md#Clone) 返回值
 ---
+
+[[toc]]
+
 # 属性
 ## Name
 - ### 名称

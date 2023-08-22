@@ -4,11 +4,12 @@ title: Vec3
 
 # 坐标
 
-[[toc]]
-
 > ## 1 处引用
 > - [LandInfo](../types/LandInfo.md#TeleportPos) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## X
 - ### x坐标

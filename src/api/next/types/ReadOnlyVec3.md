@@ -4,11 +4,12 @@ title: ReadOnlyVec3
 
 # 坐标(只读)
 
-[[toc]]
-
 > ## 1 处引用
 > - [OutOfWorldLimitInfo](../types/OutOfWorldLimitInfo.md#PreviousPosition) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## X
 - ### x坐标

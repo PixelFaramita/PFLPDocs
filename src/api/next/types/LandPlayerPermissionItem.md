@@ -4,8 +4,6 @@ title: LandPlayerPermissionItem
 
 # 玩家的领地权限项
 
-[[toc]]
-
 > ## 38 处引用
 > - [LandPlayerPermissionSettings](../types/LandPlayerPermissionSettings.md#AttackBlock) 属性
 > - [LandPlayerPermissionSettings](../types/LandPlayerPermissionSettings.md#AttackMob) 属性
@@ -46,6 +44,9 @@ title: LandPlayerPermissionItem
 > - [LandPlayerPermissionSettings](../types/LandPlayerPermissionSettings.md#UseItemOn) 属性
 > - [LandPlayerPermissionSettings](../types/LandPlayerPermissionSettings.md#ZombieBreakDoor) 属性
 ---
+
+[[toc]]
+
 # 属性
 ## Value
 - ### 开启

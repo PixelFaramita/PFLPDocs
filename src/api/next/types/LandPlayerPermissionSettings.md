@@ -6,6 +6,9 @@ title: LandPlayerPermissionSettings
 
 [[toc]]
 
+> ## 1 处引用
+> - [LandPlayerPermissionGroup](../types/LandPlayerPermissionGroup.md#Permissions) 属性
+---
 # 属性
 ## UseItemOn
 - ### 使用物品

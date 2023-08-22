@@ -6,6 +6,9 @@ title: Vec3
 
 [[toc]]
 
+> ## 1 处引用
+> - [LandInfo](../types/LandInfo.md#TeleportPos) 属性
+---
 # 属性
 ## X
 - ### x坐标

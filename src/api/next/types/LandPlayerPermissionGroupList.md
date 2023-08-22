@@ -6,6 +6,9 @@ title: LandPlayerPermissionGroupList
 
 [[toc]]
 
+> ## 1 处引用
+> - [PlayerLand](../types/PlayerLand.md#PermissionGroups) 属性
+---
 # 属性
 ## Count
 - ### 数量

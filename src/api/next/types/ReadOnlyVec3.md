@@ -6,6 +6,9 @@ title: ReadOnlyVec3
 
 [[toc]]
 
+> ## 1 处引用
+> - [OutOfWorldLimitInfo](../types/OutOfWorldLimitInfo.md#PreviousPosition) 属性
+---
 # 属性
 ## X
 - ### x坐标

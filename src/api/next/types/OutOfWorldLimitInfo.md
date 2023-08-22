@@ -6,6 +6,9 @@ title: OutOfWorldLimitInfo
 
 [[toc]]
 
+> ## 1 处引用
+> - [OutOfWorldLimit 事件](../events/OutOfWorldLimit.md) 参数 info
+---
 # 属性
 ## PreviousPosition
 - ### 上一个正常的坐标

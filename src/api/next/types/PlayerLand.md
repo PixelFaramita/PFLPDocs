@@ -6,6 +6,9 @@ title: PlayerLand
 
 [[toc]]
 
+> ## 1 处引用
+> - [LandApi](../types/LandApi.md#ByPlayer) 返回值
+---
 # 属性
 ## Count
 - ### 玩家的拥有的领地数量

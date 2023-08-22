@@ -6,6 +6,10 @@ title: LandInfo
 
 [[toc]]
 
+> ## 2 处引用
+> - [LandCreate 事件](../events/LandCreate.md) 参数 land
+> - [LandInstance](../types/LandInstance.md#Info) 属性
+---
 # 属性
 ## Start
 - ### 领地起始坐标

@@ -6,6 +6,9 @@ title: LandConfig
 
 [[toc]]
 
+> ## 1 处引用
+> - [LandPriceInfo](../types/LandPriceInfo.md#LandConfig) 属性
+---
 # 属性
 ## Price2d
 - ### 2d领地价格

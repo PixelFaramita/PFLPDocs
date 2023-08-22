@@ -6,6 +6,9 @@ title: LandInstance
 
 [[toc]]
 
+> ## 1 处引用
+> - [PlayerLand](../types/PlayerLand.md#OwnedLands) 属性
+---
 # 属性
 ## Info
 - ### 领地信息

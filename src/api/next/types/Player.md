@@ -6,6 +6,12 @@ title: Player
 
 [[toc]]
 
+> ## 4 处引用
+> - [LandCalcPrice 事件](../events/LandCalcPrice.md) 参数 player
+> - [OutOfWorldLimit 事件](../events/OutOfWorldLimit.md) 参数 player
+> - [TpaStart 事件](../events/TpaStart.md) 参数 fromPlayer
+> - [TpaStart 事件](../events/TpaStart.md) 参数 toPlayer
+---
 # 属性
 ## Xuid
 - ### 玩家xuid

@@ -4,6 +4,9 @@ title: LandPermissionCategory
 
 # LandPermissionCategory
 ## 权限项类型
+> ### 1 处引用
+> - [LandPlayerPermissionItem::Category](../types/LandPlayerPermissionItem.md#category) 属性
+---
 | 名称 | 描述 |
 | ---- | ---- |
 | Public | 公共权限类 |

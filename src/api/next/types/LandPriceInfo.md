@@ -4,6 +4,10 @@ title: LandPriceInfo
 
 # 领地价格信息
 
+> ### 1 处引用
+> - [LandCalcPrice 事件](../events/LandCalcPrice.md) 参数 landPrice
+---
+
 [[toc]]
 
 # 属性
@@ -36,7 +40,7 @@ title: LandPriceInfo
 - ### 类型: int
 - ### 只读
 ## LandConfig
-- ### 领地领地配置
+- ### 领地配置
 - ### 类型: [LandConfig](../types/LandConfig.md)
 - ### 只读
 ## LandType

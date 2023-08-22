@@ -4,6 +4,8 @@ title: CancellationTokenSource
 
 # 取消令牌
 
+> ### 无引用
+
 [[toc]]
 
 # 函数对象

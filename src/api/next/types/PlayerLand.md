@@ -4,6 +4,10 @@ title: PlayerLand
 
 # 玩家领地接口
 
+> ### 1 处引用
+> - [LandApi::ByPlayer](../types/LandApi.md#byplayer) 返回值
+---
+
 [[toc]]
 
 # 属性

@@ -4,6 +4,10 @@ title: LandType
 
 # LandType
 ## 领地类型
+> ### 2 处引用
+> - [LandInfo::LandType](../types/LandInfo.md#landtype) 属性
+> - [LandPriceInfo::LandType](../types/LandPriceInfo.md#landtype) 属性
+---
 | 名称 | 描述 |
 | ---- | ---- |
 | D2 | 二维领地 |

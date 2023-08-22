@@ -4,6 +4,10 @@ title: OutOfWorldLimitInfo
 
 # 超出边界的坐标信息
 
+> ### 1 处引用
+> - [OutOfWorldLimit 事件](../events/OutOfWorldLimit.md) 参数 info
+---
+
 [[toc]]
 
 # 属性

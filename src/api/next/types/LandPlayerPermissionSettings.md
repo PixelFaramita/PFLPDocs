@@ -4,6 +4,10 @@ title: LandPlayerPermissionSettings
 
 # 玩家的领地权限内容
 
+> ### 1 处引用
+> - [LandPlayerPermissionGroup::Permissions](../types/LandPlayerPermissionGroup.md#permissions) 属性
+---
+
 [[toc]]
 
 # 属性

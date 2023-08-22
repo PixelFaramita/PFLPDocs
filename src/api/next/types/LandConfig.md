@@ -4,6 +4,10 @@ title: LandConfig
 
 # 领地配置信息
 
+> ### 1 处引用
+> - [LandPriceInfo::LandConfig](../types/LandPriceInfo.md#landconfig) 属性
+---
+
 [[toc]]
 
 # 属性

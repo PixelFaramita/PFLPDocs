@@ -4,6 +4,10 @@ title: LandPlayerPermissionGroupList
 
 # 玩家的领地权限组列表
 
+> ### 1 处引用
+> - [PlayerLand::PermissionGroups](../types/PlayerLand.md#permissiongroups) 属性
+---
+
 [[toc]]
 
 # 属性

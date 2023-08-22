@@ -8,7 +8,7 @@ https://docs.mcpf.live/
 <summary>备用地址</summary>
 https://pflpdocs.pages.dev/
   <br>
-https://lazulikao.github.io/PFLPDocs
+https://pixelfaramita.github.io/PFLPDocs
   <br>
 https://d.mcpf.live/
 </details>

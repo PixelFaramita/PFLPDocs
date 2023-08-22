@@ -5,7 +5,7 @@ title: Vec3
 # 坐标
 
 > ## 1 处引用
-> - [LandInfo::TeleportPos](../types/LandInfo.md#TeleportPos) 属性
+> - [LandInfo::TeleportPos](../types/LandInfo.md#teleportpos) 属性
 ---
 
 [[toc]]

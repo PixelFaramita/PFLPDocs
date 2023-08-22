@@ -5,10 +5,10 @@ title: LandPlayerPermissionGroup
 # 玩家的领地权限组
 
 > ## 4 处引用
-> - [LandPlayerPermissionGroup::Clone](../types/LandPlayerPermissionGroup.md#Clone) 返回值
-> - [LandPlayerPermissionGroupList::Custom](../types/LandPlayerPermissionGroupList.md#Custom) 属性
-> - [LandPlayerPermissionGroupList::DefaultPublic](../types/LandPlayerPermissionGroupList.md#DefaultPublic) 属性
-> - [LandPlayerPermissionGroupList::DefaultShared](../types/LandPlayerPermissionGroupList.md#DefaultShared) 属性
+> - [LandPlayerPermissionGroup::Clone](../types/LandPlayerPermissionGroup.md#clone) 返回值
+> - [LandPlayerPermissionGroupList::Custom](../types/LandPlayerPermissionGroupList.md#custom) 属性
+> - [LandPlayerPermissionGroupList::DefaultPublic](../types/LandPlayerPermissionGroupList.md#defaultpublic) 属性
+> - [LandPlayerPermissionGroupList::DefaultShared](../types/LandPlayerPermissionGroupList.md#defaultshared) 属性
 ---
 
 [[toc]]

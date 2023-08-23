@@ -8,4 +8,6 @@ order: -1
   - 领地类型
 - [LandPermissionCategory](./LandPermissionCategory.md)
   - 权限项类型
+- [BackupItemType](./BackupItemType.md)
+  - 备份类型
     

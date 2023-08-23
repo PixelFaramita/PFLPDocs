@@ -20,6 +20,10 @@ order: -1
   - 领地实例
 - [LandApi](./LandApi.md)
   - 领地接口
+- [PlayerApi](./PlayerApi.md)
+  - 玩家列表
+- [OfflinePlayer](./OfflinePlayer.md)
+  - 离线玩家对象
 - [Player](./Player.md)
   - 玩家对象
 - [CancellationTokenSource](./CancellationTokenSource.md)
@@ -40,4 +44,14 @@ order: -1
   - 领地配置信息
 - [LandPriceInfo](./LandPriceInfo.md)
   - 领地价格信息
+- [MotdInfo](./MotdInfo.md)
+  - Motd信息
+- [BackupInfo](./BackupInfo.md)
+  - 备份信息
+- [IpLocationRequest](./IpLocationRequest.md)
+  - IP归属地信息请求
+- [WebUILandmarkInfoRequest](./WebUILandmarkInfoRequest.md)
+  - 地标信息请求
+- [WebUINickNameInfoRequest](./WebUINickNameInfoRequest.md)
+  - 昵称信息请求
     

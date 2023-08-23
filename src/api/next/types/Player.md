@@ -48,3 +48,21 @@ title: Player
     | 名称 | 类型 | 描述 |
     |---|---|---|
    | key | string | 唯一标识符或uuid |
+## DelayTeleportAsync
+- ### 延迟传送
+- 返回值: [Task](../types/Task.md)&lt;bool&gt;
+- 参数:
+    | 名称 | 类型 | 描述 |
+    |---|---|---|
+   | x | float | x坐标 |
+   | y | float | y坐标 |
+   | z | float | z坐标 |
+   | dimensionId | int | 维度ID |
+## DelayTeleportAsync
+- ### 延迟传送
+- 返回值: [Task](../types/Task.md)&lt;bool&gt;
+- 参数:
+    | 名称 | 类型 | 描述 |
+    |---|---|---|
+   | position | [Vec3](../types/Vec3.md) | 坐标 |
+   | dimensionId | int | 维度ID |

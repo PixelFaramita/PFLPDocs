@@ -20,6 +20,14 @@ order: -1
   - 领地实例
 - [LandApi](./LandApi.md)
   - 领地接口
+- [PlayerSettingsStringEntry](./PlayerSettingsStringEntry.md)
+  - String设置项实例
+- [PlayerSettingsBooleanEntry](./PlayerSettingsBooleanEntry.md)
+  - Boolean设置项实例
+- [PlayerSettingsModule](./PlayerSettingsModule.md)
+  - 玩家个人设置注册(链式接口)
+- [PlayerSettingsApi](./PlayerSettingsApi.md)
+  - 玩家个人设置接口
 - [PlayerApi](./PlayerApi.md)
   - 玩家列表
 - [OfflinePlayer](./OfflinePlayer.md)

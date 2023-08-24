@@ -4,12 +4,14 @@ title: Player
 
 # 玩家对象
 
-> ### 7 处引用
+> ### 9 处引用
 > - [LandCalcPrice 事件](../events/LandCalcPrice.md) 参数 player
 > - [OutOfWorldLimit 事件](../events/OutOfWorldLimit.md) 参数 player
 > - [PlayerApi::GetByUniqueId](../types/PlayerApi.md#getbyuniqueid) 返回值
 > - [PlayerApi::GetByUuid](../types/PlayerApi.md#getbyuuid) 返回值
 > - [PlayerApi::GetByXuid](../types/PlayerApi.md#getbyxuid) 返回值
+> - [PlayerSettingsBooleanEntry::Get](../types/PlayerSettingsBooleanEntry.md#get) 参数 1
+> - [PlayerSettingsStringEntry::Get](../types/PlayerSettingsStringEntry.md#get) 参数 1
 > - [TpaStart 事件](../events/TpaStart.md) 参数 fromPlayer
 > - [TpaStart 事件](../events/TpaStart.md) 参数 toPlayer
 ---

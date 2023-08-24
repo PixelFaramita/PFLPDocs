@@ -4,7 +4,9 @@ title: OfflinePlayer
 
 # 离线玩家对象
 
-> ### 3 处引用
+> ### 5 处引用
+> - [PlayerSettingsBooleanEntry::GetOffline](../types/PlayerSettingsBooleanEntry.md#getoffline) 参数 1
+> - [PlayerSettingsStringEntry::GetOffline](../types/PlayerSettingsStringEntry.md#getoffline) 参数 1
 > - [WebUIHiddenPlayerListRequest::Player](../types/WebUIHiddenPlayerListRequest.md#player) 属性
 > - [WebUILandmarkInfoRequest::Player](../types/WebUILandmarkInfoRequest.md#player) 属性
 > - [WebUINickNameInfoRequest::Player](../types/WebUINickNameInfoRequest.md#player) 属性

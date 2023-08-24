@@ -1,28 +1,28 @@
 {
   "latest": {
-    "date": "2023-08-24T17:57:44.6964164+08:00",
-    "title": "PlayerSettingsAPI",
-    "content": "PlayerSettingsAPI\n",
-    "version": "0.1.2208",
-    "versionNumber": 2208,
+    "date": "2023-08-24T18:07:31.1587153+08:00",
+    "title": "fix",
+    "content": "fix\n",
+    "version": "0.1.2210",
+    "versionNumber": 2210,
     "bds": "1.20.14",
     "ll": "2.15.0",
     "llnet": "2.15.0",
-    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2208",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2210",
     "files": [
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2208/LLNet_with_PFLP_Beta_v0.1.2208.zip",
-        "name": "LLNet_with_PFLP_Beta_v0.1.2208.zip",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2210/LLNet_with_PFLP_Beta_v0.1.2210.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2210.zip",
         "type": "application/zip",
-        "size": 12762829,
-        "update": "2023-08-24T09:57:44+00:00"
+        "size": 12763219,
+        "update": "2023-08-24T10:07:30+00:00"
       },
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2208/PFLP_Beta_v0.1.2208.dll",
-        "name": "PFLP_Beta_v0.1.2208.dll",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2210/PFLP_Beta_v0.1.2210.dll",
+        "name": "PFLP_Beta_v0.1.2210.dll",
         "type": "application/octet-stream",
         "size": 20786704,
-        "update": "2023-08-24T09:57:35+00:00"
+        "update": "2023-08-24T10:07:27+00:00"
       }
     ]
   },
@@ -1689,6 +1689,33 @@
         "type": "application/octet-stream",
         "size": 20780560,
         "update": "2023-08-24T17:02:20+08:00"
+      }
+    ]
+  },
+  "0.1.2208": {
+    "date": "2023-08-24T17:57:44.6964164+08:00",
+    "title": "PlayerSettingsAPI",
+    "content": "PlayerSettingsAPI\n",
+    "version": "0.1.2208",
+    "versionNumber": 2208,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2208",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2208/LLNet_with_PFLP_Beta_v0.1.2208.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2208.zip",
+        "type": "application/zip",
+        "size": 12762829,
+        "update": "2023-08-24T17:57:44+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2208/PFLP_Beta_v0.1.2208.dll",
+        "name": "PFLP_Beta_v0.1.2208.dll",
+        "type": "application/octet-stream",
+        "size": 20786704,
+        "update": "2023-08-24T17:57:35+08:00"
       }
     ]
   }

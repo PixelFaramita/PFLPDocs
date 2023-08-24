@@ -44,7 +44,7 @@ jobs:
           app_location: "src/.vuepress/dist" # App source code path
           output_location: "src/.vuepress/dist"
           app_artifact_location: "src/.vuepress/dist"
-          skip_app_build: true
+          app_build_command: "ls src/.vuepress/dist"
           ###### End of Repository/Build Configurations ######
       - name: Upload to GitHub branch
         uses: JamesIves/github-pages-deploy-action@v4

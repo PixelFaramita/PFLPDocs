@@ -1,28 +1,28 @@
 {
   "latest": {
-    "date": "2023-08-24T18:27:13.1423239+08:00",
-    "title": "fix boolean in dts",
-    "content": "fix boolean in dts\n",
-    "version": "0.1.2213",
-    "versionNumber": 2213,
+    "date": "2023-08-25T17:13:45.9740313+08:00",
+    "title": "add lib",
+    "content": "add lib\n",
+    "version": "0.1.2224",
+    "versionNumber": 2224,
     "bds": "1.20.14",
     "ll": "2.15.0",
     "llnet": "2.15.0",
-    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2213",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2224",
     "files": [
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2213/LLNet_with_PFLP_Beta_v0.1.2213.zip",
-        "name": "LLNet_with_PFLP_Beta_v0.1.2213.zip",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2224/LLNet_with_PFLP_Beta_v0.1.2224.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2224.zip",
         "type": "application/zip",
-        "size": 12762649,
-        "update": "2023-08-24T10:27:12+00:00"
+        "size": 13591197,
+        "update": "2023-08-25T09:13:45+00:00"
       },
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2213/PFLP_Beta_v0.1.2213.dll",
-        "name": "PFLP_Beta_v0.1.2213.dll",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2224/PFLP_Beta_v0.1.2224.dll",
+        "name": "PFLP_Beta_v0.1.2224.dll",
         "type": "application/octet-stream",
-        "size": 20786704,
-        "update": "2023-08-24T10:27:02+00:00"
+        "size": 23034896,
+        "update": "2023-08-25T09:13:42+00:00"
       }
     ]
   },
@@ -1770,6 +1770,141 @@
         "type": "application/octet-stream",
         "size": 20787216,
         "update": "2023-08-24T18:22:16+08:00"
+      }
+    ]
+  },
+  "0.1.2213": {
+    "date": "2023-08-24T18:27:13.1423239+08:00",
+    "title": "fix boolean in dts",
+    "content": "fix boolean in dts\n",
+    "version": "0.1.2213",
+    "versionNumber": 2213,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2213",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2213/LLNet_with_PFLP_Beta_v0.1.2213.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2213.zip",
+        "type": "application/zip",
+        "size": 12762649,
+        "update": "2023-08-24T18:27:12+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2213/PFLP_Beta_v0.1.2213.dll",
+        "name": "PFLP_Beta_v0.1.2213.dll",
+        "type": "application/octet-stream",
+        "size": 20786704,
+        "update": "2023-08-24T18:27:02+08:00"
+      }
+    ]
+  },
+  "0.1.2214": {
+    "date": "2023-08-24T19:25:56.099214+08:00",
+    "title": "Update Info.cs",
+    "content": "Update Info.cs\n",
+    "version": "0.1.2214",
+    "versionNumber": 2214,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2214",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2214/LLNet_with_PFLP_Beta_v0.1.2214.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2214.zip",
+        "type": "application/zip",
+        "size": 12762857,
+        "update": "2023-08-24T19:25:55+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2214/PFLP_Beta_v0.1.2214.dll",
+        "name": "PFLP_Beta_v0.1.2214.dll",
+        "type": "application/octet-stream",
+        "size": 20786704,
+        "update": "2023-08-24T19:25:53+08:00"
+      }
+    ]
+  },
+  "0.1.2219": {
+    "date": "2023-08-24T21:04:30.6445066+08:00",
+    "title": "sync",
+    "content": "sync\n",
+    "version": "0.1.2219",
+    "versionNumber": 2219,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2219",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2219/LLNet_with_PFLP_Beta_v0.1.2219.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2219.zip",
+        "type": "application/zip",
+        "size": 13339694,
+        "update": "2023-08-24T21:04:30+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2219/PFLP_Beta_v0.1.2219.dll",
+        "name": "PFLP_Beta_v0.1.2219.dll",
+        "type": "application/octet-stream",
+        "size": 22469648,
+        "update": "2023-08-24T21:04:19+08:00"
+      }
+    ]
+  },
+  "0.1.2222": {
+    "date": "2023-08-24T21:18:57.2329449+08:00",
+    "title": "add cache",
+    "content": "add cache\n",
+    "version": "0.1.2222",
+    "versionNumber": 2222,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2222",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2222/LLNet_with_PFLP_Beta_v0.1.2222.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2222.zip",
+        "type": "application/zip",
+        "size": 13316333,
+        "update": "2023-08-24T21:18:57+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2222/PFLP_Beta_v0.1.2222.dll",
+        "name": "PFLP_Beta_v0.1.2222.dll",
+        "type": "application/octet-stream",
+        "size": 22399504,
+        "update": "2023-08-24T21:18:46+08:00"
+      }
+    ]
+  },
+  "0.1.2223": {
+    "date": "2023-08-25T16:58:14.7465135+08:00",
+    "title": "fix dts",
+    "content": "fix dts\n",
+    "version": "0.1.2223",
+    "versionNumber": 2223,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2223",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2223/LLNet_with_PFLP_Beta_v0.1.2223.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2223.zip",
+        "type": "application/zip",
+        "size": 13314300,
+        "update": "2023-08-25T16:58:14+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2223/PFLP_Beta_v0.1.2223.dll",
+        "name": "PFLP_Beta_v0.1.2223.dll",
+        "type": "application/octet-stream",
+        "size": 22401552,
+        "update": "2023-08-25T16:58:10+08:00"
       }
     ]
   }

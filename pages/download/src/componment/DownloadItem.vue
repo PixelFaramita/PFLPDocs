@@ -4,7 +4,7 @@
     <span>
       <span v-if="item.title"> Commit：{{ item.content }} <br /> </span>
       发布时间：{{ formatDate(item.date) }} <br />
-      兼容信息：<br />
+      最低兼容：<br />
       <span class="ml-4"> BDS：{{ item.bds }} <br /> </span>
       <span class="ml-4"> LL ：{{ item.ll }} <br /> </span>
       <span class="ml-4"> LL.NET：{{ item.llnet }} <br /> </span>

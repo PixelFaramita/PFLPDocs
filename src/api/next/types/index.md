@@ -54,4 +54,6 @@ order: -1
   - 地标信息请求
 - [WebUINickNameInfoRequest](./WebUINickNameInfoRequest.md)
   - 昵称信息请求
+- [WebUIHiddenPlayerListRequest](./WebUIHiddenPlayerListRequest.md)
+  - 隐藏玩家请求
     

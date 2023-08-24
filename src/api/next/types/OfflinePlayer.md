@@ -4,7 +4,8 @@ title: OfflinePlayer
 
 # 离线玩家对象
 
-> ### 2 处引用
+> ### 3 处引用
+> - [WebUIHiddenPlayerListRequest::Player](../types/WebUIHiddenPlayerListRequest.md#player) 属性
 > - [WebUILandmarkInfoRequest::Player](../types/WebUILandmarkInfoRequest.md#player) 属性
 > - [WebUINickNameInfoRequest::Player](../types/WebUINickNameInfoRequest.md#player) 属性
 ---

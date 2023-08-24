@@ -22,4 +22,6 @@ order: -1
   - WebUI在线地图获取地标
 - [WebUIGetNickName](./WebUIGetNickName.md)
   - WebUI在线聊天获取昵称
+- [WebUIGetHiddenPlayerTo](./WebUIGetHiddenPlayerTo.md)
+  - WebUI在线聊天获取隐藏玩家列表
     

@@ -17,8 +17,8 @@ title: PlayerSettingsModule
 - 参数:
     | 名称 | 类型 | 描述 |
     |---|---|---|
-   | defaultValue | string | 默认值 |
    | key | string | 键/标识符 |
+   | defaultValue | string | 默认值 |
    | description | string | 描述 |
    | placeholder | string | 文本框水印 |
 ## Boolean
@@ -27,6 +27,6 @@ title: PlayerSettingsModule
 - 参数:
     | 名称 | 类型 | 描述 |
     |---|---|---|
-   | defaultValue | bool | 默认值 |
    | key | string | 键/标识符 |
+   | defaultValue | bool | 默认值 |
    | description | string | 描述 |

@@ -29,4 +29,4 @@ title: TpaInfo
 - ### 设置请求搁置
 - 返回值: [TpaContinue](../types/TpaContinue.md)
 ## Remove
-- ### 从队列中移除本次请求
+- ### 取消传送(从队列中移除本次请求)

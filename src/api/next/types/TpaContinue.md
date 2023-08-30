@@ -23,3 +23,5 @@ title: TpaContinue
 ## InvokeTeleport
 - ### 恢复传送
 - 返回值: [Task](../types/Task.md)
+## RemoveTeleport
+- ### 取消传送(从队列中移除本次请求)

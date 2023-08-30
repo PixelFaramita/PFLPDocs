@@ -7,4 +7,5 @@ order: -1
 | ---- | ---- | ---- |
 | Land | [LandApi](../types/LandApi.md) | 领地 |
 | Player | [PlayerApi](../types/PlayerApi.md) | 玩家接口 |
+| Money | [MoneyApi](../types/MoneyApi.md) | 经济接口 |
 | PlayerSettings | [PlayerSettingsApi](../types/PlayerSettingsApi.md) | 玩家接口 |

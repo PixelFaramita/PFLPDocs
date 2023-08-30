@@ -12,8 +12,8 @@ title: Player
 > - [PlayerApi::GetByXuid](../types/PlayerApi.md#getbyxuid) 返回值
 > - [PlayerSettingsBooleanEntry::Get](../types/PlayerSettingsBooleanEntry.md#get) 参数 1
 > - [PlayerSettingsStringEntry::Get](../types/PlayerSettingsStringEntry.md#get) 参数 1
-> - [TpaStart 事件](../events/TpaStart.md) 参数 fromPlayer
-> - [TpaStart 事件](../events/TpaStart.md) 参数 toPlayer
+> - [TpaInfo::Sender](../types/TpaInfo.md#sender) 属性
+> - [TpaInfo::Target](../types/TpaInfo.md#target) 属性
 ---
 
 [[toc]]

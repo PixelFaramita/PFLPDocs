@@ -38,6 +38,8 @@ order: -1
   - 取消令牌
 - [OutOfWorldLimitInfo](./OutOfWorldLimitInfo.md)
   - 超出边界的坐标信息
+- [TpaContinue](./TpaContinue.md)
+  - 继续请求传送
 - [TpaInfo](./TpaInfo.md)
   - 请求传送信息
 - [ReadOnlyBlockPos](./ReadOnlyBlockPos.md)

@@ -1,28 +1,28 @@
 {
   "latest": {
-    "date": "2023-09-03T15:52:44.4216722+08:00",
-    "title": "Update MusicPlayer.cs",
-    "content": "Update MusicPlayer.cs\n\nAdd form list\n",
-    "version": "0.1.2240",
-    "versionNumber": 2240,
+    "date": "2023-09-03T16:33:14.9742931+08:00",
+    "title": "Fix bug",
+    "content": "Fix bug\n\nSync\n",
+    "version": "0.1.2241",
+    "versionNumber": 2241,
     "bds": "1.20.14",
     "ll": "2.15.0",
     "llnet": "2.15.0",
-    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2240",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2241",
     "files": [
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2240/LLNet_with_PFLP_Beta_v0.1.2240.zip",
-        "name": "LLNet_with_PFLP_Beta_v0.1.2240.zip",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2241/LLNet_with_PFLP_Beta_v0.1.2241.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2241.zip",
         "type": "application/zip",
-        "size": 13669382,
-        "update": "2023-09-03T07:52:44+00:00"
+        "size": 13722421,
+        "update": "2023-09-03T08:33:14+00:00"
       },
       {
-        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2240/PFLP_Beta_v0.1.2240.dll",
-        "name": "PFLP_Beta_v0.1.2240.dll",
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2241/PFLP_Beta_v0.1.2241.dll",
+        "name": "PFLP_Beta_v0.1.2241.dll",
         "type": "application/octet-stream",
-        "size": 23263760,
-        "update": "2023-09-03T07:52:40+00:00"
+        "size": 23434256,
+        "update": "2023-09-03T08:33:12+00:00"
       }
     ]
   },
@@ -2337,6 +2337,33 @@
         "type": "application/octet-stream",
         "size": 23115280,
         "update": "2023-08-30T23:44:19+08:00"
+      }
+    ]
+  },
+  "0.1.2240": {
+    "date": "2023-09-03T15:52:44.4216722+08:00",
+    "title": "Update MusicPlayer.cs",
+    "content": "Update MusicPlayer.cs\n\nAdd form list\n",
+    "version": "0.1.2240",
+    "versionNumber": 2240,
+    "bds": "1.20.14",
+    "ll": "2.15.0",
+    "llnet": "2.15.0",
+    "url": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/tag/v0.1.2240",
+    "files": [
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2240/LLNet_with_PFLP_Beta_v0.1.2240.zip",
+        "name": "LLNet_with_PFLP_Beta_v0.1.2240.zip",
+        "type": "application/zip",
+        "size": 13669382,
+        "update": "2023-09-03T15:52:44+08:00"
+      },
+      {
+        "download": "https://github.com/PixelFaramita/PixelFaramitaLuminousPolymerizationRes/releases/download/v0.1.2240/PFLP_Beta_v0.1.2240.dll",
+        "name": "PFLP_Beta_v0.1.2240.dll",
+        "type": "application/octet-stream",
+        "size": 23263760,
+        "update": "2023-09-03T15:52:40+08:00"
       }
     ]
   }

@@ -20,6 +20,8 @@ order: -1
   - 领地实例
 - [LandApi](./LandApi.md)
   - 领地接口
+- [MoneyApi](./MoneyApi.md)
+  - 经济接口
 - [PlayerSettingsStringEntry](./PlayerSettingsStringEntry.md)
   - String设置项实例
 - [PlayerSettingsBooleanEntry](./PlayerSettingsBooleanEntry.md)
@@ -38,6 +40,12 @@ order: -1
   - 取消令牌
 - [OutOfWorldLimitInfo](./OutOfWorldLimitInfo.md)
   - 超出边界的坐标信息
+- [HomeAddContinue](./HomeAddContinue.md)
+  - 恢复添加Home
+- [HomeAddInfo](./HomeAddInfo.md)
+  - 添加home信息
+- [TpaContinue](./TpaContinue.md)
+  - 继续请求传送
 - [TpaInfo](./TpaInfo.md)
   - 请求传送信息
 - [ReadOnlyBlockPos](./ReadOnlyBlockPos.md)

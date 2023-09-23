@@ -5,8 +5,10 @@ icon: circle-nodes
 order: 3
 ---
 
-- [TpaStart](./TpaStart.md)
+- [TpaAccepted](./TpaAccepted.md)
   - Tpa传送执行前
+- [HomeAdd](./HomeAdd.md)
+  - 玩家添加home
 - [OutOfWorldLimit](./OutOfWorldLimit.md)
   - 超出世界边界
 - [LandCalcPrice](./LandCalcPrice.md)

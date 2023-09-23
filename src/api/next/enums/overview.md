@@ -10,4 +10,6 @@ order: -1
   - 权限项类型
 - [BackupItemType](./BackupItemType.md)
   - 备份类型
+- [TpaMode](./TpaMode.md)
+  - Tpa传送模式
     

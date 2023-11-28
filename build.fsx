@@ -105,7 +105,7 @@ let appendRelease dist releasePath path=
     }
 let buildDocs()=
     async{
-    do! run"npm ci"
+    //do! run"npm i"
     do! run"npm run docs:build"
     File.WriteAllText(Path.Combine(baseDir,"src",".vuepress","dist",".nojekyll"),"")
     }

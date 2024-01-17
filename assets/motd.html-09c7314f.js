@@ -1,0 +1,9 @@
+import{_ as n}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as a,e}from"./app-05b574d6.js";const t={},o=e(`<h2 id="配置文件" tabindex="-1"><a class="header-anchor" href="#配置文件" aria-hidden="true">#</a> 配置文件</h2><div class="language-json line-numbers-mode" data-ext="json"><pre class="language-json"><code><span class="token property">&quot;DynamicMotd&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;ModuleEnabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">//刷新间隔（单位：毫秒）(客户端有一定获取间隔，刷新太快没有实际意义)</span>
+    <span class="token property">&quot;RefreshInterval&quot;</span><span class="token operator">:</span> <span class="token number">2500</span><span class="token punctuation">,</span>
+    <span class="token comment">//motd 的具体内容</span>
+    <span class="token comment">//每页内容在间隔后切换</span>
+    <span class="token property">&quot;Pages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;服务器&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;%playercount% 在线&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2),p=[o];function c(l,r){return s(),a("div",null,p)}const d=n(t,[["render",c],["__file","motd.html.vue"]]);export{d as default};

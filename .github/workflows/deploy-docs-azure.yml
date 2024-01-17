@@ -46,13 +46,6 @@ jobs:
           app_artifact_location: "src/.vuepress/dist"
           app_build_command: "ls src/.vuepress/dist"
           ###### End of Repository/Build Configurations ######
-      - name: Upload to GitHub branch
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages-original
-          folder: src/.vuepress/dist
-          clean: true
-          single-commit: true
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest

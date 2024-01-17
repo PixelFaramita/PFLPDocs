@@ -1,0 +1,34 @@
+name: Deploy Cloudflare
+on:
+  push:
+    branches:
+      - 💥
+jobs:
+  build_and_deploy_job:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build
+        run: dotnet fsi build.fsx
+      - name: Upload to GitHub branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages-original
+          folder: src/.vuepress/dist
+          clean: true
+          single-commit: true
